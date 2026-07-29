@@ -19,10 +19,13 @@
 
 # production
 /build
+*.zip
 
 # misc
 .DS_Store
 *.pem
+public/bgvd.original.mp4
+/source-media/
 
 # local dev / design artifacts
 /temporary screenshots/

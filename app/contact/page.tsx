@@ -6,7 +6,6 @@ import PageHero from "../components/PageHero";
 import RevealOnScroll from "../components/RevealOnScroll";
 import ContactForm from "./ContactForm";
 import { createPageMetadata } from "@/lib/seo";
-import PartnerBookingLinks from "../components/PartnerBookingLinks";
 import { BUSINESS, getActiveSocialLinks } from "@/lib/site";
 
 export const metadata: Metadata = createPageMetadata({
@@ -37,13 +36,12 @@ export default function ContactPage() {
                     Reserve Your Table
                   </h2>
                   <p className="body-text" style={{ maxWidth: "48ch" }}>
-                    Share your details and we&apos;ll confirm your reservation. For events and private dining, visit our{" "}
+                    Reserve online via ReserveGo. For events and private dining, visit our{" "}
                     <Link href="/events" style={{ color: "var(--gold)", textDecoration: "underline" }}>
                       events page
                     </Link>
                     .
                   </p>
-                  <PartnerBookingLinks variant="light" />
                 </div>
               </RevealOnScroll>
               <ContactForm />

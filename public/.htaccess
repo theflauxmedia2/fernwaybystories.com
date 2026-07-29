@@ -1,0 +1,37 @@
+# Redirect www to non-www
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www\.fernwaybystories\.com [NC]
+RewriteRule ^(.*)$ https://fernwaybystories.com/$1 [L,R=301]
+
+# Force HTTPS
+RewriteCond %{HTTPS} !=on
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# MIME types (some shared hosts serve wrong types without these)
+AddType text/css .css
+AddType application/javascript .js
+AddType font/woff2 .woff2
+AddType image/webp .webp
+AddType video/mp4 .mp4
+
+# Security headers
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+  Header set X-Frame-Options "SAMEORIGIN"
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+# Trailing slash for static export folders
+DirectoryIndex index.html
+ErrorDocument 404 /404.html
+
+# Cache static assets (safe for hashed Next bundles and media)
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/css "access plus 1 year"
+  ExpiresByType application/javascript "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType video/mp4 "access plus 1 month"
+  ExpiresByType font/woff2 "access plus 1 year"
+</IfModule>

@@ -33,24 +33,6 @@ export const BUSINESS = {
     instagram: "https://www.instagram.com/fernwaybystories",
     facebook: "https://www.facebook.com/",
   },
-  bookingPartners: [
-    {
-      id: "eazydiner",
-      name: "EazyDiner",
-      href: "https://www.eazydiner.com/bengaluru/fernway-by-stories-bangalore-central-jp-nagar-713458",
-      logo: "/partners/eazydiner.svg",
-      logoWidth: 108,
-      logoHeight: 22,
-    },
-    {
-      id: "swiggy-dineout",
-      name: "Swiggy Dineout",
-      href: "https://www.swiggy.com/restaurants/bangalore/mayaganahalli/fernway-by-stories-1375475/dineout",
-      logo: "/partners/swiggy-dineout.svg",
-      logoWidth: 128,
-      logoHeight: 26,
-    },
-  ],
 } as const;
 
 const PLACEHOLDER_SOCIAL_HOSTS = new Set(["www.facebook.com", "facebook.com"]);

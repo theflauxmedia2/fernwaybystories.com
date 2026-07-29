@@ -1,6 +1,8 @@
 import type { MetadataRoute } from "next";
 import { SITE_URL } from "@/lib/site";
 
+export const dynamic = "force-static";
+
 /** Allow search engines and AI assistants to crawl public marketing pages */
 const AI_AND_SEARCH_BOTS = [
   "GPTBot",

@@ -31,7 +31,7 @@ const ambienceMeta = [
 
 const foodMeta = [
   { title: "From the Kitchen", desc: "Artisan plates, plated with care." },
-  { title: "Chef's Selection", desc: "Seasonal flavours, bold and refined." },
+  { title: "Sky-lit Tables", desc: "Dining beneath Bengaluru nights." },
   { title: "Signature Bites", desc: "Curated for open-air evenings." },
   { title: "Tonight's Spread", desc: "A taste of Fernway by Stories." },
 ];

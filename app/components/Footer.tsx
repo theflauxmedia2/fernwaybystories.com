@@ -2,7 +2,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { SITE_LOGO } from "@/lib/favicons";
 import ReserveTableLink from "./ReserveTableLink";
-import PartnerBookingLinks from "./PartnerBookingLinks";
 import FooterCredits from "./FooterCredits";
 import { BUSINESS } from "@/lib/site";
 
@@ -36,7 +35,6 @@ export default function Footer() {
                 WhatsApp
               </a>
             </div>
-            <PartnerBookingLinks variant="light" />
             <p className="site-footer-byline">By Stories Bar &amp; Kitchen</p>
           </div>
 

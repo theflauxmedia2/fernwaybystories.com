@@ -15,35 +15,6 @@ export function openWhatsApp(message: string) {
   }
 }
 
-export type ContactReservationForm = {
-  name: string;
-  phone: string;
-  date: string;
-  time: string;
-  guests: string;
-  message: string;
-};
-
-export function formatContactReservationMessage(form: ContactReservationForm) {
-  const lines = [
-    "Hello Fernway by Stories,",
-    "",
-    "I would like to reserve a table.",
-    "",
-    `Name: ${form.name}`,
-    `Phone: ${form.phone}`,
-    `Date: ${form.date}`,
-    `Time: ${form.time}`,
-    `Guests: ${form.guests}`,
-  ];
-
-  if (form.message.trim()) {
-    lines.push(`Special requests: ${form.message.trim()}`);
-  }
-
-  return lines.join("\n");
-}
-
 export type EventEnquiryFormData = {
   name: string;
   contact: string;
@@ -70,12 +41,3 @@ export function formatEventEnquiryMessage(form: EventEnquiryFormData) {
 
   return lines.join("\n");
 }
-
-/** Quick reserve — used by site-wide Reserve CTAs (no form) */
-export const QUICK_RESERVE_MESSAGE = [
-  "Hello Fernway by Stories,",
-  "",
-  "I would like to reserve a table.",
-].join("\n");
-
-export const reserveTableWhatsAppUrl = buildWhatsAppUrl(QUICK_RESERVE_MESSAGE);

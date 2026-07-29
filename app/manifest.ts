@@ -2,6 +2,8 @@ import type { MetadataRoute } from "next";
 import { manifestIcons } from "@/lib/favicons";
 import { BUSINESS, SEO } from "@/lib/site";
 
+export const dynamic = "force-static";
+
 export default function manifest(): MetadataRoute.Manifest {
   return {
     name: BUSINESS.name,

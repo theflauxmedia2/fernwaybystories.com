@@ -41,7 +41,7 @@ export default function HeroBackgroundVideo() {
           muted
           loop
           playsInline
-          preload="auto"
+          preload="metadata"
           poster={POSTER_SRC}
           aria-hidden="true"
           onError={() => setUseVideo(false)}
