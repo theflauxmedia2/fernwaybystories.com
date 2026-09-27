@@ -7,9 +7,9 @@ import MenuTabs from "./MenuTabs";
 import { createPageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = createPageMetadata({
-  title: "Menu",
+  title: "Menu | Cocktails, Plates & Shisha",
   description:
-    "Our menu at Fernway by Stories — small plates, mains, vegetarian selection, desserts, cocktails, and shisha at our open-air Bengaluru landmark.",
+    "Our menu at Fernway by Stories — small plates, mains, a vegetarian selection, desserts, cocktails, and shisha at our open-air Bengaluru landmark.",
   path: "/menu",
   image: "/food/1.webp",
   imageAlt: "Food and drinks at Fernway by Stories kitchen",

@@ -13,9 +13,9 @@ import {
 import { createPageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = createPageMetadata({
-  title: "Gallery",
+  title: "Gallery | Open-Air Lounge Photos",
   description:
-    "Moments that linger — explore open-air ambience and kitchen photography at Fernway by Stories on Bengaluru Mysore Highway, Mayaganahalli.",
+    "Moments that linger — explore open-air ambience and kitchen photography at Fernway by Stories, the lounge on Bengaluru Mysore Highway, Mayaganahalli.",
   path: "/gallery",
   image: "/ambience/3.webp",
   imageAlt: "Gallery of Fernway by Stories open-air seating and kitchen",
@@ -35,7 +35,7 @@ export default function GalleryPage() {
               <div className="divider mx-auto" />
               <p className="section-label">The Experience</p>
               <h2 className="heading-display gallery-page-intro-title">
-                A glimpse of <em style={{ color: "var(--gold)", fontStyle: "italic" }}>Fernway</em>
+                A glimpse of <em style={{ color: "var(--gold-on-light)", fontStyle: "italic" }}>Fernway</em>
               </h2>
               <p className="gallery-page-intro-lead">
                 Open-air ambience and plates from the kitchen — explore the full collection below.

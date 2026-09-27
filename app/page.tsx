@@ -207,7 +207,7 @@ export default function Home() {
                     }}
                   >
                     An Evening on{" "}
-                    <em style={{ color: "var(--gold)", fontStyle: "italic" }}>Bengaluru Mysore Highway</em>
+                    <em style={{ color: "var(--gold-on-light)", fontStyle: "italic" }}>Bengaluru Mysore Highway</em>
                   </h2>
                   <p
                     style={{
@@ -308,7 +308,7 @@ export default function Home() {
                   }}
                 >
                   Three pillars of{" "}
-                  <em style={{ color: "var(--gold)", fontStyle: "italic" }}>the Fernway</em>
+                  <em style={{ color: "var(--gold-on-light)", fontStyle: "italic" }}>the Fernway</em>
                 </h2>
               </div>
             </RevealOnScroll>

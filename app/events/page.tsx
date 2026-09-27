@@ -14,7 +14,7 @@ import {
 } from "@/lib/events-data";
 
 export const metadata: Metadata = createPageMetadata({
-  title: "Events & Private Dining",
+  title: "Events & Private Dining, Bengaluru",
   description:
     "Evenings at Fernway — DJ nights, themed evenings, weekend sessions, and private celebrations in our open-air Bengaluru setting. Submit an event enquiry online.",
   path: "/events",
@@ -74,7 +74,7 @@ export default function EventsPage() {
                   <div className="divider" />
                   <p className="section-label">Private Dining &amp; Celebrations</p>
                   <h2 id="events-private-heading" className="heading-display events-private-title">
-                    Celebrate <em style={{ color: "var(--gold)", fontStyle: "italic" }}>With Us</em>
+                    Celebrate <em style={{ color: "var(--gold-on-light)", fontStyle: "italic" }}>With Us</em>
                   </h2>
                   <p className="body-text events-private-lead">{PRIVATE_DINING_INTRO}</p>
                 </div>

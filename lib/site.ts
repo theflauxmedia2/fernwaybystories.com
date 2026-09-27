@@ -59,7 +59,7 @@ export function getActiveSocialLinks() {
 export const SEO = {
   defaultTitle: "Fernway by Stories | Open-Air Lounge, Bengaluru",
   defaultDescription:
-    "Fernway by Stories — Bengaluru Mysore Highway has a new iconic landmark. Open-air seating, curated cocktails, globally inspired comfort food, and relaxed evenings under the open sky. Reserve your table.",
+    "Fernway by Stories — Bengaluru Mysore Highway has a new iconic landmark. Open-air seating, curated cocktails, and globally inspired comfort food. Reserve your table.",
   keywords: [
     "Fernway by Stories",
     "Fernway Mayaganahalli",
@@ -76,6 +76,10 @@ export const SEO = {
   ogImage: "/ambience/1.webp",
 } as const;
 
+/** Canonical URL: non-www, HTTPS, trailing slash. */
 export function pageUrl(path = "") {
-  return `${SITE_URL}${path.startsWith("/") ? path : `/${path}`}`;
+  if (!path || path === "/") return `${SITE_URL}/`;
+  const normalized = path.startsWith("/") ? path : `/${path}`;
+  const withSlash = normalized.endsWith("/") ? normalized : `${normalized}/`;
+  return `${SITE_URL}${withSlash}`;
 }

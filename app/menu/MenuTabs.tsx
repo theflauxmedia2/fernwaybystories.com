@@ -73,7 +73,7 @@ export default function MenuTabs() {
               exit={{ opacity: 0, y: lite ? -4 : -8 }}
               transition={{ duration: lite ? 0.22 : 0.4, ease: lite ? easeOutSoft : easeLuxury }}
             >
-              <p className="menu-panel-label section-label">{current.label}</p>
+              <h2 className="menu-panel-label section-label">{current.label}</h2>
               <ul className="menu-panel-list">
                 {current.items.map((item) => (
                   <li key={item.name} className="menu-item">
@@ -100,7 +100,7 @@ export default function MenuTabs() {
           <RevealOnScroll>
             <div className="flex flex-col items-center gap-8">
               <h2 className="heading-display" style={{ fontSize: "clamp(2rem, 4vw, 3.2rem)" }}>
-                Ready to <em style={{ color: "var(--gold)", fontStyle: "italic" }}>dine?</em>
+                Ready to <em style={{ color: "var(--gold-on-light)", fontStyle: "italic" }}>dine?</em>
               </h2>
               <ReserveTableLink className="btn-dark">
                 Reserve a Table

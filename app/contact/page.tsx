@@ -9,9 +9,9 @@ import { createPageMetadata } from "@/lib/seo";
 import { BUSINESS, getActiveSocialLinks } from "@/lib/site";
 
 export const metadata: Metadata = createPageMetadata({
-  title: "Contact & Reservations",
+  title: "Contact & Reservations | Bengaluru",
   description:
-    "Reserve your table at Fernway by Stories, Mayaganahalli, Bengaluru. Open daily 1pm–6am. Call 080-471-62244 or confirm your reservation online.",
+    "Reserve your table at Fernway by Stories in Mayaganahalli, Bengaluru. Open daily 1pm–6am. Call 080-471-62244 or confirm your reservation online.",
   path: "/contact",
   image: "/ambience/1.webp",
   imageAlt: "Contact and reservations at Fernway by Stories",
@@ -37,7 +37,7 @@ export default function ContactPage() {
                   </h2>
                   <p className="body-text" style={{ maxWidth: "48ch" }}>
                     Reserve online via ReserveGo. For events and private dining, visit our{" "}
-                    <Link href="/events" style={{ color: "var(--gold)", textDecoration: "underline" }}>
+                    <Link href="/events" style={{ color: "var(--gold-on-light)", textDecoration: "underline" }}>
                       events page
                     </Link>
                     .
@@ -101,7 +101,7 @@ export default function ContactPage() {
                         key={link.name}
                         href={link.href}
                         className="section-label hover:underline"
-                        style={{ color: "var(--gold)" }}
+                        style={{ color: "var(--gold-on-light)" }}
                         target="_blank"
                         rel="noopener noreferrer"
                       >

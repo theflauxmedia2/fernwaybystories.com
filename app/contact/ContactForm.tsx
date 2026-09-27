@@ -13,14 +13,14 @@ export default function ContactForm() {
       </ReserveTableLink>
       <p className="body-text text-sm" style={{ maxWidth: "48ch", color: "var(--text-muted)" }}>
         Prefer to call or message? Reach us at{" "}
-        <a href={`tel:${BUSINESS.phone}`} className="hover:underline" style={{ color: "var(--gold)" }}>
+        <a href={`tel:${BUSINESS.phone}`} className="hover:underline" style={{ color: "var(--gold-on-light)" }}>
           {BUSINESS.phoneDisplay}
         </a>{" "}
         or{" "}
         <a
           href={BUSINESS.whatsapp}
           className="hover:underline"
-          style={{ color: "var(--gold)" }}
+          style={{ color: "var(--gold-on-light)" }}
           target="_blank"
           rel="noopener noreferrer"
         >

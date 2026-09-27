@@ -9,7 +9,7 @@ import ReserveTableLink from "../components/ReserveTableLink";
 import { createPageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = createPageMetadata({
-  title: "The Fernway Experience",
+  title: "The Fernway Experience, Bengaluru",
   description:
     "Discover the story behind Fernway by Stories — an open-air landmark in Bengaluru built for unhurried evenings, thoughtful food, and nature-inspired ambience.",
   path: "/about",
@@ -61,7 +61,7 @@ export default function AboutPage() {
                 <p className="section-label">Our Story</p>
                 <h2 className="heading-display" style={{ fontSize: "clamp(2rem, 3.5vw, 3rem)" }}>
                   An open-air landmark shaped by{" "}
-                  <em style={{ color: "var(--gold)", fontStyle: "italic" }}>stories</em>
+                  <em style={{ color: "var(--gold-on-light)", fontStyle: "italic" }}>stories</em>
                 </h2>
                 <p className="body-text">
                   Fernway was envisioned as a modern open-air retreat on Bengaluru Mysore Highway — inspired by nature,
@@ -85,7 +85,7 @@ export default function AboutPage() {
                   <div className="divider" />
                   <p className="section-label">Philosophy</p>
                   <h2 className="heading-display about-philosophy-title">
-                    Thoughtfully <em style={{ color: "var(--gold)", fontStyle: "italic" }}>Crafted</em>
+                    Thoughtfully <em style={{ color: "var(--gold-on-light)", fontStyle: "italic" }}>Crafted</em>
                   </h2>
                   <p className="body-text about-philosophy-lead">
                     Our kitchen and bar share one approach: global comfort food and drinks that feel familiar yet
@@ -115,7 +115,7 @@ export default function AboutPage() {
                   <div className="divider" />
                   <p className="section-label">The Space</p>
                   <h2 className="heading-display about-space-title">
-                    Designed for <em style={{ color: "var(--gold)", fontStyle: "italic" }}>Every Mood</em>
+                    Designed for <em style={{ color: "var(--gold-on-light)", fontStyle: "italic" }}>Every Mood</em>
                   </h2>
                   <p className="body-text about-space-lead">
                     Fernway evolves with the hours — calm afternoons, golden sunsets, and softly energized nights.

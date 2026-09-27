@@ -47,13 +47,15 @@
   --bg-card: #faf8f3;
   --bg-card-hover: #fffdf8;
   --text-light: #1a1c18;
-  --text-muted: rgba(26, 28, 24, 0.58);
+  --text-muted: rgba(26, 28, 24, 0.62);
   --border-light: rgba(var(--gold-rgb), 0.16);
 
   /* Legacy aliases */
   --bg: var(--bg-dark-deep);
   --offwhite: var(--text-dark);
   --gold-dim: color-mix(in srgb, var(--brand-gold) 68%, black);
+  /* Gold darkened so small text clears contrast on cream and sand */
+  --gold-on-light: color-mix(in srgb, var(--brand-gold) 62%, black);
 
   /* Layout & rhythm */
   --nav-height: 6rem;
@@ -784,6 +786,13 @@ body {
   letter-spacing: 0.32em;
   text-transform: uppercase;
   color: var(--gold);
+}
+
+.section-bg-cream .section-label,
+.section-bg-sand .section-label,
+.gallery-page-intro .section-label,
+.menu-panel-label {
+  color: var(--gold-on-light);
 }
 
 /* ── Divider ── */
@@ -1896,7 +1905,7 @@ body {
   font-weight: 600;
   letter-spacing: 0.26em;
   text-transform: uppercase;
-  color: rgba(242, 237, 228, 0.5);
+  color: rgba(242, 237, 228, 0.82);
 }
 
 .events-form-input {
@@ -3262,4 +3271,43 @@ a,
 .nav-menu-btn,
 .nav-drawer-link {
   touch-action: manipulation;
+}
+
+.not-found-main {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1.25rem;
+  padding: 8rem 1.5rem 4.5rem;
+}
+
+.not-found-title {
+  font-size: clamp(2.4rem, 6vw, 4.5rem);
+}
+
+.not-found-copy {
+  max-width: 36ch;
+}
+
+.not-found-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+.gallery-bento-tile:focus-visible,
+.field:focus-visible,
+.events-form-input:focus-visible {
+  outline: 2px solid #1a1c18;
+  outline-offset: 3px;
+  box-shadow: 0 0 0 5px #f2ede4;
 }
