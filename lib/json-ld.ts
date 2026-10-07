@@ -1,6 +1,7 @@
 import { SITE_LOGO } from "./favicons";
-import { BUSINESS, SEO, SITE_URL, isActiveSocialUrl, pageUrl } from "./site";
+import { BUSINESS, SEO, SERVICE_AREAS, SITE_URL, isActiveSocialUrl, pageUrl } from "./site";
 import { absoluteAssetUrl } from "./seo";
+import type { FaqItem } from "./faq-data";
 
 const organizationId = `${SITE_URL}/#organization`;
 const websiteId = `${SITE_URL}/#website`;
@@ -20,7 +21,7 @@ export function getStructuredDataGraph() {
         "@type": "Organization",
         "@id": organizationId,
         name: BUSINESS.name,
-        alternateName: ["Fernway", "Stories Bar & Kitchen"],
+        alternateName: ["Fernway", "Fernway Mayaganahalli", "Stories Bar & Kitchen"],
         url: SITE_URL,
         slogan: BUSINESS.tagline,
         logo: {
@@ -74,7 +75,28 @@ export function getStructuredDataGraph() {
         logo: absoluteAssetUrl(SITE_LOGO),
         description: SEO.defaultDescription,
         slogan: BUSINESS.tagline,
-        servesCuisine: ["Global comfort food", "Cocktails", "Vegetarian", "Shisha"],
+        alternateName: ["Fernway", "Fernway Mayaganahalli"],
+        servesCuisine: [
+          "North Indian",
+          "Indian",
+          "Global comfort food",
+          "Vegetarian",
+          "Desserts",
+          "Coffee",
+          "Cocktails",
+          "Shisha",
+        ],
+        keywords:
+          "garden restaurant, outdoor dining, open air dining, highway restaurant, cafe, live music, family dining, road trip food stop, Bangalore Mysore Highway, Mysore Road, Mayaganahalli, Ramanagara",
+        areaServed: SERVICE_AREAS.map((name) => ({ "@type": "Place", name })),
+        amenityFeature: [
+          "Outdoor seating",
+          "Garden dining",
+          "Live music",
+          "Family friendly",
+          "Pet friendly",
+          "Private dining",
+        ].map((name) => ({ "@type": "LocationFeatureSpecification", name, value: true })),
         priceRange: "₹₹₹",
         telephone: BUSINESS.phone,
         address: {
@@ -108,11 +130,25 @@ export function getStructuredDataGraph() {
         ],
         hasMap: BUSINESS.mapsUrl,
         menu: pageUrl("/menu"),
+        hasMenu: pageUrl("/menu"),
         acceptsReservations: true,
         petsAllowed: true,
         parentOrganization: { "@id": organizationId },
         ...(sameAs.length > 0 ? { sameAs } : {}),
       },
     ],
+  };
+}
+
+/** FAQPage schema — only for pages that render the same Q&A visibly */
+export function getFaqStructuredData(faqs: FaqItem[]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map(({ question, answer }) => ({
+      "@type": "Question",
+      name: question,
+      acceptedAnswer: { "@type": "Answer", text: answer },
+    })),
   };
 }

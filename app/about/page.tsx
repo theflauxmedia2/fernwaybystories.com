@@ -9,27 +9,37 @@ import ReserveTableLink from "../components/ReserveTableLink";
 import { createPageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = createPageMetadata({
-  title: "The Fernway Experience",
+  title: "Garden Restaurant in Mayaganahalli",
   description:
-    "Discover the story behind Fernway by Stories — an open-air landmark in Bengaluru built for unhurried evenings, thoughtful food, and nature-inspired ambience.",
+    "Fernway by Stories is a garden restaurant with greenery and good ambience on the Bangalore Mysore Highway near Ramanagara — relaxed dining away from the city.",
   path: "/about",
   image: "/ambience/2.webp",
-  imageAlt: "Fernway by Stories open-air ambience, Bengaluru",
-  keywords: ["about Fernway", "open-air lounge story", "Fernway experience Bengaluru"],
+  imageAlt: "Garden ambience and greenery at Fernway by Stories, Mayaganahalli",
+  keywords: [
+    "garden restaurants in Mayaganahalli",
+    "garden restaurants on Bangalore Mysore Highway",
+    "restaurants with greenery on Mysore Road",
+    "restaurants with good ambience on Bangalore Mysore Highway",
+    "scenic restaurants near Ramanagara",
+    "relaxed dining places on Mysore Road",
+    "romantic restaurants on Bangalore Mysore Highway",
+    "green ambience restaurants near Bengaluru",
+    "Fernway by Stories garden dining",
+  ],
 });
 
 const philosophy = [
-  "Nature-inspired open-air ambience",
-  "Comfort-driven global menu",
-  "Music that enhances, never overwhelms",
-  "Service that feels warm and personal",
+  "Nature-inspired open-air garden ambience",
+  "North Indian favourites and a comfort-driven global menu",
+  "Live music that enhances, never overwhelms",
+  "Service that feels warm and personal, for families, couples, and groups",
 ];
 
 const momentAccents = ["twilight", "rust", "pine"] as const;
 
 const dayFlow = [
-  { label: "Afternoon", desc: "Soft light, quiet corners, and a gentle start along Bengaluru Mysore Highway." },
-  { label: "Evening", desc: "Fernway comes alive — music, plates, and the first toast." },
+  { label: "Afternoon", desc: "Soft light, quiet corners, and a relaxed lunch along Bengaluru Mysore Highway." },
+  { label: "Evening", desc: "Fernway comes alive — live music, dinner plates, and the first toast." },
   { label: "Late Night", desc: "Unhurried hours under the open sky until the evening winds down." },
 ];
 
@@ -38,7 +48,11 @@ export default function AboutPage() {
     <>
       <Nav />
       <main>
-        <PageHero label="The Fernway Experience" title="About" />
+        <PageHero
+          label="The Fernway Experience"
+          title="About"
+          subtitle="A garden restaurant in Mayaganahalli, on the Bangalore Mysore Highway"
+        />
 
         <section className="section-bg-cream">
           <div className="section-wrap section-pad grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
@@ -46,7 +60,7 @@ export default function AboutPage() {
               <div className="relative img-overlay" style={{ aspectRatio: "3/4", border: "1px solid var(--border-light)" }}>
                 <Image
                   src="/ambience/2.webp"
-                  alt="Fernway by Stories open-air ambience"
+                  alt="Open-air garden dining with greenery and warm lights at Fernway by Stories"
                   fill
                   className="object-cover"
                   sizes="(max-width: 1024px) 100vw, 50vw"
@@ -60,17 +74,19 @@ export default function AboutPage() {
                 <div className="divider" />
                 <p className="section-label">Our Story</p>
                 <h2 className="heading-display" style={{ fontSize: "clamp(2rem, 3.5vw, 3rem)" }}>
-                  An open-air landmark shaped by{" "}
+                  A garden restaurant shaped by{" "}
                   <em style={{ color: "var(--gold)", fontStyle: "italic" }}>stories</em>
                 </h2>
                 <p className="body-text">
-                  Fernway was envisioned as a modern open-air retreat on Bengaluru Mysore Highway — inspired by nature,
-                  designed for connection, and rooted in the Stories hospitality ethos. A place where guests can step away
-                  from the pace of the city and enjoy meaningful moments over food, drinks, and conversation.
+                  Fernway was envisioned as a modern open-air retreat in Mayaganahalli, on the Bengaluru Mysore Highway
+                  near Ramanagara — inspired by nature, designed for connection, and rooted in the Stories hospitality
+                  ethos. A scenic place away from Bangalore city where guests can step away from the pace of everyday
+                  life and enjoy meaningful moments over food, drinks, and conversation.
                 </p>
                 <p className="body-text">
-                  Every detail — from the greenery and warm light to the menu and music — is designed so you can
-                  arrive, unwind, and leave with moments that linger.
+                  Every detail — from the greenery and warm light to the menu and live music — is designed so you can
+                  arrive, unwind, and leave with moments that linger — the kind of good ambience that turns a quick
+                  stop on Mysore Road into a whole afternoon.
                 </p>
               </div>
             </RevealOnScroll>
@@ -119,8 +135,8 @@ export default function AboutPage() {
                   </h2>
                   <p className="body-text about-space-lead">
                     Fernway evolves with the hours — calm afternoons, golden sunsets, and softly energized nights.
-                    Intimate seating, open views, and warm lighting create a setting that adapts effortlessly to
-                    every mood.
+                    Intimate corners for date nights, long garden tables for family dining and friends, open views,
+                    and warm lighting create a romantic, relaxed setting that adapts effortlessly to every mood.
                   </p>
                 </header>
               </RevealOnScroll>

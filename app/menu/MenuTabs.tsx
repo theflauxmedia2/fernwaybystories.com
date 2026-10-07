@@ -73,7 +73,8 @@ export default function MenuTabs() {
               exit={{ opacity: 0, y: lite ? -4 : -8 }}
               transition={{ duration: lite ? 0.22 : 0.4, ease: lite ? easeOutSoft : easeLuxury }}
             >
-              <p className="menu-panel-label section-label">{current.label}</p>
+              <h2 className="menu-panel-label section-label">{current.label}</h2>
+              <p className="body-text menu-panel-intro">{current.intro}</p>
               <ul className="menu-panel-list">
                 {current.items.map((item) => (
                   <li key={item.name} className="menu-item">

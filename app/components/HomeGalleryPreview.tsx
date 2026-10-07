@@ -63,7 +63,7 @@ export default function HomeGalleryPreview({
                 >
                   <Image
                     src={item.url}
-                    alt={item.title}
+                    alt={`${item.title} — ${item.desc}`}
                     fill
                     className="gallery-card-img object-cover"
                     sizes={i === 0 ? "(max-width:768px) 100vw, 66vw" : "(max-width:768px) 50vw, 33vw"}
@@ -99,7 +99,7 @@ export default function HomeGalleryPreview({
               >
                 <Image
                   src={item.url}
-                  alt={item.title}
+                  alt={`${item.title} — ${item.desc}`}
                   fill
                   className="gallery-card-img object-cover"
                   sizes={i === 0 ? "(max-width:768px) 100vw, 66vw" : "(max-width:768px) 50vw, 33vw"}
@@ -149,7 +149,7 @@ export default function HomeGalleryPreview({
             >
               <Image
                 src={selected.url}
-                alt={selected.title}
+                alt={`${selected.title} — ${selected.desc}`}
                 fill
                 className="object-contain"
                 sizes="100vw"
