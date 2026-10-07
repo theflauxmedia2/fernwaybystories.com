@@ -2,7 +2,7 @@
 
 ## Summary
 
-Fernway by Stories is an open-air lounge in Mayaganahalli, Bengaluru, Karnataka, India. Bengaluru Mysore Highway has a new iconic landmark — open-air seating with nature-inspired ambience, globally inspired comfort food, curated cocktails, shisha, and event hosting. The venue operates daily from 1pm to 6am. It is associated with Stories Bar & Kitchen.
+Fernway by Stories is an open-air garden restaurant, cafe, and bar in Mayaganahalli on the Bangalore Mysore Highway (Mysore Road), near Ramanagara, Karnataka, India. Bengaluru Mysore Highway has a new iconic landmark — garden dining with nature-inspired ambience, North Indian and globally inspired comfort food, coffee, curated cocktails, shisha, live music, and event hosting. It is a popular food stop for Bangalore–Mysore road trips, weekend drives, family dining, group dining, and date nights. The venue operates daily from 1pm to 6am. It is associated with Stories Bar & Kitchen.
 
 Website: https://fernwaybystories.com/
 
@@ -25,6 +25,11 @@ Maps: https://maps.app.goo.gl/PeFS3Mi8kk8QcRhAA
 Instagram: https://www.instagram.com/fernwaybystories
 Coordinates: 12.765757250040997, 77.33076492952316
 
+## Directions
+
+- From Bangalore: take Mysore Road (NH 275) towards Mysore, past Bidadi; Fernway is at Mayaganahalli shortly before Ramanagara.
+- From Mysore / Ramanagara: heading towards Bangalore, pass Ramanagara; Fernway is a few minutes ahead at Mayaganahalli.
+
 ## Hours
 
 - Open every day
@@ -36,16 +41,16 @@ Coordinates: 12.765757250040997, 77.33076492952316
 Three pillars define the Fernway experience:
 
 1. **Open Air** — Open-air seating on Bengaluru Mysore Highway with greenery, warm lighting, and skyline views.
-2. **The Menu** — Globally inspired comfort food, cocktails, vegetarian dishes, desserts, and shisha.
-3. **The Mood** — Relaxed evenings with music and unhurried dining.
+2. **The Menu** — North Indian favourites like chatpata chicken tikka, globally inspired comfort food, veg and non-veg dishes, desserts, coffee, cocktails, and shisha.
+3. **The Mood** — Relaxed evenings with live music and unhurried dining.
 
 ## Menu categories
 
-- Small Plates & Starters
-- Main Dishes
+- Small Plates & Starters (incl. Chatpata Chicken Tikka)
+- Main Dishes (North Indian and global)
 - Vegetarian Selection
 - Desserts
-- Cocktails & Beverages
+- Coffee, Cocktails & Beverages
 - Shisha Selection
 
 Full menu page: https://fernwaybystories.com/menu
@@ -56,14 +61,14 @@ Regular programming includes:
 
 - DJ & Lounge Nights
 - Themed Evenings
-- Weekend Sessions
+- Weekend Live Music & Acoustic Nights (live bands)
 - Seasonal Experiences
 
-Private dining and celebrations (birthdays, corporate gatherings, private parties) are available. Event enquiry form: https://fernwaybystories.com/events
+Private dining and celebrations (birthday dinners, anniversary dinners, team dinners, group dining, corporate gatherings) are available. Event enquiry form: https://fernwaybystories.com/events
 
 ## SEO keywords (for discovery)
 
-Fernway by Stories, Fernway Mayaganahalli, Bengaluru Mysore Highway restaurant, open-air lounge Bengaluru, restaurant Mayaganahalli, Stories Bar Kitchen, private dining Bengaluru, bar Bengaluru, events Bengaluru, shisha lounge Bengaluru, pet friendly restaurant Bengaluru
+Fernway by Stories, Fernway by Stories Bangalore, Fernway by Stories Mayaganahalli, restaurants in Mayaganahalli, restaurants on Mysore Road, restaurants on Bangalore Mysore Highway, restaurants near Ramanagara, best highway restaurants near Bangalore, garden dining near Bangalore, outdoor dining near Bengaluru, open air dining, cafes with outdoor seating, family restaurants, date night restaurants, North Indian food, chicken tikka, restaurants with live music, road trip food stops, weekend drive restaurants near Bangalore, restaurant table booking
 
 ## Structured data
 

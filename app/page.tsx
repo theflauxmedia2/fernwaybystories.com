@@ -9,6 +9,8 @@ import RevealOnScroll from "./components/RevealOnScroll";
 import HomeGalleryPreview from "./components/HomeGalleryPreview";
 import ReserveTableLink from "./components/ReserveTableLink";
 import { fernwayGalleryItems } from "@/lib/gallery-items";
+import { homeFaqs } from "@/lib/faq-data";
+import { getFaqStructuredData } from "@/lib/json-ld";
 import { createPageMetadata } from "@/lib/seo";
 import { BUSINESS, SEO } from "@/lib/site";
 
@@ -17,9 +19,21 @@ export const metadata: Metadata = createPageMetadata({
   description: SEO.defaultDescription,
   path: "/",
   titleAbsolute: true,
-  imageAlt: "Fernway by Stories open-air lounge at dusk, Bengaluru",
-  keywords: ["open-air bar Bengaluru", "Bengaluru Mysore Highway lounge", "reserve table Fernway", "Mayaganahalli nightlife"],
+  imageAlt: "Fernway by Stories open-air garden restaurant at dusk on Bangalore Mysore Highway",
+  keywords: [
+    "best restaurants on Bangalore Mysore Highway",
+    "best restaurants in Mayaganahalli",
+    "best restaurants on Mysore Road",
+    "highway restaurants on Bangalore Mysore Highway",
+    "garden restaurants on Mysore Road",
+    "family restaurants on Bangalore Mysore Highway",
+    "road trip food stops on Bangalore Mysore Highway",
+    "weekend drive cafes near Bengaluru",
+    "restaurants away from Bangalore city",
+  ],
 });
+
+const faqJsonLd = getFaqStructuredData(homeFaqs);
 
 const pillarAccents = ["twilight", "rust", "pine"] as const;
 
@@ -27,17 +41,35 @@ const pillars = [
   {
     num: "01",
     title: "Open Air",
-    desc: "Open-air seating beneath the sky, framed by lush greenery and warm amber light. A landmark destination along the Bengaluru Mysore Highway, Fernway blends effortless charm with pet-friendly hospitality, creating a space where every member of the family feels at home. Unhurried, open, and unmistakably Fernway.",
+    desc: "Open-air garden seating beneath the sky, framed by lush greenery and warm amber light. A landmark destination along the Bengaluru Mysore Highway, Fernway blends effortless charm with pet-friendly hospitality, creating a space where every member of the family feels at home. Unhurried, open, and unmistakably Fernway.",
   },
   {
     num: "02",
     title: "The Menu",
-    desc: "A kitchen that borrows from everywhere. Globally inspired comfort food, handcrafted cocktails, and a shisha selection made for slow evenings and good company.",
+    desc: "A kitchen that borrows from everywhere. North Indian favourites like our chatpata chicken tikka, globally inspired comfort food, desserts and coffee, handcrafted cocktails, and a shisha selection made for slow evenings and good company.",
   },
   {
     num: "03",
     title: "The Mood",
-    desc: "Soft music, an easy pace, and a space that never rushes. From the first drink to the last, Fernway is built for those who linger.",
+    desc: "Live music, an easy pace, and a space that never rushes. From acoustic sets to weekend live bands, Fernway is built for those who linger.",
+  },
+];
+
+const roadTripStops = [
+  {
+    num: "01",
+    title: "Road Trip Food Stops",
+    desc: "Driving the Bangalore–Mysore route? Break the journey with a long lunch, an early dinner, or coffee and quick bites in the garden. Open from 1pm until late, Fernway is a relaxed highway restaurant on Mysore Road for weekend drives and long drives out of Bangalore.",
+  },
+  {
+    num: "02",
+    title: "Family & Group Dining",
+    desc: "Spacious outdoor seating makes Fernway a favourite for family lunches, family dinners, team dinners, and group dining with friends. Veg and non-veg North Indian food, small plates, and desserts mean there's something for everyone at the table.",
+  },
+  {
+    num: "03",
+    title: "Date Nights & Celebrations",
+    desc: "Candlelit tables, greenery, and live music make Fernway a romantic, couple-friendly restaurant on the Bangalore Mysore Highway — made for date nights, birthday dinners, and anniversary dinners near Ramanagara.",
   },
 ];
 
@@ -99,6 +131,7 @@ export default function Home() {
                   }}
                 >
                   FERNWAY
+                  <span className="sr-only"> by Stories</span>
                 </h1>
               </div>
 
@@ -206,8 +239,8 @@ export default function Home() {
                       letterSpacing: "-0.015em",
                     }}
                   >
-                    An Evening on{" "}
-                    <em style={{ color: "var(--gold)", fontStyle: "italic" }}>Bengaluru Mysore Highway</em>
+                    An Open-Air Garden Restaurant on{" "}
+                    <em style={{ color: "var(--gold)", fontStyle: "italic" }}>Bangalore Mysore Highway</em>
                   </h2>
                   <p
                     style={{
@@ -219,9 +252,10 @@ export default function Home() {
                       fontWeight: 300,
                     }}
                   >
-                    Fernway by Stories has a new iconic landmark on Bengaluru Mysore Highway — open-air seating
-                    for evenings that deserve more than ordinary. Candlelit tables, globally inspired food,
-                    and cocktails poured for conversations that run late. Pull up. Stay as long as you like.
+                    Fernway by Stories is a new iconic landmark in Mayaganahalli, on the Bengaluru Mysore Highway
+                    near Ramanagara — garden dining and open-air seating for afternoons and evenings that deserve
+                    more than ordinary. Candlelit tables, North Indian and globally inspired food, and cocktails
+                    poured for conversations that run late. Pull up. Stay as long as you like.
                   </p>
 
                   {/* <div className="flex flex-wrap gap-3" style={{ paddingTop: "0.5rem" }}>
@@ -249,7 +283,7 @@ export default function Home() {
                 >
                   <Image
                     src="/ambience/14.webp"
-                    alt="Fernway by Stories open-air seating"
+                    alt="Open-air garden seating surrounded by greenery at Fernway by Stories, Mayaganahalli"
                     fill
                     className="object-cover"
                     sizes="(max-width: 768px) 100vw, 50vw"
@@ -328,11 +362,57 @@ export default function Home() {
           </div>
         </section>
 
+        {/* ═══════════════════════════════════════
+            ROAD TRIP STOP  ·  cream
+        ═══════════════════════════════════════ */}
+        <section className="section-bg-cream" aria-labelledby="home-roadtrip-heading">
+          <div className="section-wrap section-pad">
+            <RevealOnScroll>
+              <div className="flex flex-col" style={{ gap: "1.25rem", marginBottom: "clamp(2.5rem, 5vw, 4rem)" }}>
+                <div className="divider" />
+                <p className="section-label">Bangalore – Mysore Road Trips</p>
+                <h2
+                  id="home-roadtrip-heading"
+                  style={{
+                    fontFamily: "var(--font-display, Georgia, serif)",
+                    fontWeight: 400,
+                    fontSize: "clamp(2rem, 3.8vw, 3.4rem)",
+                    color: "var(--text-light)",
+                    letterSpacing: "-0.015em",
+                    lineHeight: 1.1,
+                  }}
+                >
+                  Your stop on the{" "}
+                  <em style={{ color: "var(--gold)", fontStyle: "italic" }}>Mysore Road</em>
+                </h2>
+                <p className="body-text" style={{ maxWidth: "60ch" }}>
+                  Just an easy drive away from Bangalore city, Fernway is one of the most scenic highway
+                  restaurants near Bengaluru — a green, relaxed escape for lunch and dinner stops on the
+                  Bangalore Mysore route, whether you&apos;re heading out for the weekend or coming home.
+                </p>
+              </div>
+            </RevealOnScroll>
+
+            <div className="pillar-grid">
+              {roadTripStops.map((p, i) => (
+                <RevealOnScroll key={p.title} delay={i * 90} className="h-full">
+                  <div className={`pillar-card pillar-card--${pillarAccents[i]}`}>
+                    <span className="pillar-num">{p.num}</span>
+                    <h3 className="pillar-card-title">{p.title}</h3>
+                    <div className="pillar-card-rule" aria-hidden="true" />
+                    <p className="pillar-card-desc">{p.desc}</p>
+                  </div>
+                </RevealOnScroll>
+              ))}
+            </div>
+          </div>
+        </section>
+
         <HomeGalleryPreview
           imageItems={fernwayGalleryItems}
           label="Gallery"
           title="Moments That Linger"
-          description="A glimpse of evenings at Fernway — ambience, plates, and the mood that stays with you."
+          description="A glimpse of evenings at Fernway — garden ambience, plates from the kitchen, and the mood that stays with you."
           ctaHref="/gallery"
           ctaLabel="View Full Gallery"
         />
@@ -394,9 +474,9 @@ export default function Home() {
                     fontWeight: 300,
                   }}
                 >
-                  Tables fill fast, especially on weekends. Reserve yours and give the evening the space
-                  it deserves — along Bengaluru Mysore Highway, under open sky. For private celebrations and events,
-                  our team handles every detail.
+                  Tables fill fast, especially on weekends. Book your table and give the evening the space
+                  it deserves — along Bengaluru Mysore Highway, under open sky. For birthdays, anniversaries,
+                  and private celebrations, our team handles every detail.
                 </p>
                 <div className="cta-stack" style={{ paddingTop: "0.5rem" }}>
                   <ReserveTableLink className="btn-gold">Reserve Now</ReserveTableLink>
@@ -419,6 +499,38 @@ export default function Home() {
           </div>
         </section>
 
+        {/* ═══════════════════════════════════════
+            FAQ  ·  sand
+        ═══════════════════════════════════════ */}
+        <section className="section-bg-sand" aria-labelledby="home-faq-heading">
+          <div className="section-wrap section-pad home-faq">
+            <RevealOnScroll>
+              <div className="flex flex-col" style={{ gap: "1.25rem" }}>
+                <div className="divider" />
+                <p className="section-label">Good to Know</p>
+                <h2 id="home-faq-heading" className="heading-display home-faq-title">
+                  Fernway by Stories{" "}
+                  <em style={{ color: "var(--gold)", fontStyle: "italic" }}>FAQs</em>
+                </h2>
+              </div>
+            </RevealOnScroll>
+
+            <RevealOnScroll delay={100}>
+              <div className="home-faq-list">
+                {homeFaqs.map(({ question, answer }) => (
+                  <details key={question} className="home-faq-item">
+                    <summary className="home-faq-question">{question}</summary>
+                    <p className="body-text home-faq-answer">{answer}</p>
+                  </details>
+                ))}
+              </div>
+            </RevealOnScroll>
+          </div>
+        </section>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        />
       </main>
       <Footer />
     </>

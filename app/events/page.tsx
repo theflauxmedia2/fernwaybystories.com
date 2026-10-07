@@ -11,16 +11,31 @@ import {
   EVENTS_OVERVIEW_INTRO,
   eventTypes,
   PRIVATE_DINING_INTRO,
+  PRIVATE_DINING_LABEL,
 } from "@/lib/events-data";
 
 export const metadata: Metadata = createPageMetadata({
-  title: "Events & Private Dining",
+  title: "Live Music, Events & Private Dining",
   description:
-    "Evenings at Fernway — DJ nights, themed evenings, weekend sessions, and private celebrations in our open-air Bengaluru setting. Submit an event enquiry online.",
+    "Live bands, acoustic nights and weekend music events at Fernway by Stories on the Bangalore Mysore Highway. Book birthday, anniversary and team dinners.",
   path: "/events",
   image: "/ambience/10.webp",
-  imageAlt: "Events and private dining at Fernway by Stories",
-  keywords: ["events Bengaluru", "private dining Bengaluru", "DJ lounge Mayaganahalli"],
+  imageAlt: "Live music evening in the garden at Fernway by Stories",
+  keywords: [
+    "Fernway by Stories live music",
+    "Fernway by Stories events",
+    "Fernway by Stories birthday dinner",
+    "Fernway by Stories anniversary dinner",
+    "Fernway by Stories group dining",
+    "restaurants with live music on Bangalore Mysore Highway",
+    "live music venues on Mysore Road",
+    "live band events near Ramanagara",
+    "acoustic music nights in Mayaganahalli",
+    "weekend music events on Bangalore Mysore Highway",
+    "birthday celebration venues on Mysore Road",
+    "team dinner restaurants near Ramanagara",
+    "outdoor live music restaurants near Bangalore",
+  ],
 });
 
 export default function EventsPage() {
@@ -28,7 +43,11 @@ export default function EventsPage() {
     <>
       <Nav />
       <main>
-        <PageHero label="Events & Private Dining" title="Events" />
+        <PageHero
+          label="Events & Private Dining"
+          title="Events"
+          subtitle="Live music, birthdays and group dining on the Bangalore Mysore Highway"
+        />
 
         {/* Section 1: Events overview */}
         <section className="events-overview section-bg-cream" aria-labelledby="events-overview-heading">
@@ -50,7 +69,7 @@ export default function EventsPage() {
                   <article className="events-card gallery-card img-overlay">
                     <Image
                       src={evt.image}
-                      alt={evt.title}
+                      alt={`${evt.title} at Fernway by Stories, Bangalore Mysore Highway`}
                       fill
                       className="object-cover events-card-img"
                       sizes="(max-width: 768px) 100vw, 50vw"
@@ -72,7 +91,7 @@ export default function EventsPage() {
               <RevealOnScroll>
                 <div className="events-private-copy">
                   <div className="divider" />
-                  <p className="section-label">Private Dining &amp; Celebrations</p>
+                  <p className="section-label">{PRIVATE_DINING_LABEL}</p>
                   <h2 id="events-private-heading" className="heading-display events-private-title">
                     Celebrate <em style={{ color: "var(--gold)", fontStyle: "italic" }}>With Us</em>
                   </h2>
@@ -84,7 +103,7 @@ export default function EventsPage() {
                 <figure className="events-private-photo img-overlay">
                   <Image
                     src="/ambience/10.webp"
-                    alt="Private dining and celebrations at Fernway"
+                    alt="Birthday and anniversary dinner celebrations at Fernway by Stories"
                     fill
                     className="object-cover"
                     sizes="(max-width: 1024px) 100vw, 45vw"
@@ -110,7 +129,8 @@ export default function EventsPage() {
                     Plan your <em style={{ color: "var(--gold)", fontStyle: "italic" }}>event</em>
                   </h2>
                   <p className="events-enquiry-lead">
-                    Share your date, guest count, and vision — our team will respond within 24 hours.
+                    Planning a birthday celebration, anniversary dinner, team dinner, or live music evening? Share your
+                    date, guest count, and vision — our team will respond within 24 hours.
                   </p>
                 </div>
               </RevealOnScroll>

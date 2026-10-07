@@ -9,13 +9,24 @@ import { createPageMetadata } from "@/lib/seo";
 import { BUSINESS, getActiveSocialLinks } from "@/lib/site";
 
 export const metadata: Metadata = createPageMetadata({
-  title: "Contact & Reservations",
+  title: "Reservations, Location & Timings",
   description:
-    "Reserve your table at Fernway by Stories, Mayaganahalli, Bengaluru. Open daily 1pm–6am. Call 080-471-62244 or confirm your reservation online.",
+    "Book a table at Fernway by Stories, Mayaganahalli, Bangalore Mysore Highway near Ramanagara. Open daily 1pm–6am. Call 080-471-62244 or get directions.",
   path: "/contact",
   image: "/ambience/1.webp",
-  imageAlt: "Contact and reservations at Fernway by Stories",
-  keywords: ["reserve table Fernway", "Fernway phone number", "open-air dining Bengaluru"],
+  imageAlt: "Table booking at Fernway by Stories, Bangalore Mysore Highway",
+  keywords: [
+    "Fernway by Stories reservations",
+    "Fernway by Stories table booking",
+    "Fernway by Stories contact number",
+    "Fernway by Stories location",
+    "Fernway by Stories directions",
+    "Fernway by Stories timings",
+    "restaurant table booking in Mayaganahalli",
+    "restaurant table booking on Mysore Road",
+    "restaurant table booking on Bangalore Mysore Highway",
+    "restaurant table booking near Ramanagara",
+  ],
 });
 
 export default function ContactPage() {
@@ -23,7 +34,11 @@ export default function ContactPage() {
     <>
       <Nav />
       <main>
-        <PageHero label="Get in Touch" title="Contact" />
+        <PageHero
+          label="Get in Touch"
+          title="Contact"
+          subtitle="Fernway by Stories reservations, location, directions and timings"
+        />
 
         <section className="section-bg-cream">
           <div className="section-wrap section-pad grid grid-cols-1 lg:grid-cols-5 gap-10 lg:gap-16">
@@ -33,10 +48,12 @@ export default function ContactPage() {
                   <div className="divider" />
                   <p className="section-label">Reservations</p>
                   <h2 className="heading-display" style={{ fontSize: "clamp(1.8rem, 3vw, 2.6rem)" }}>
-                    Reserve Your Table
+                    Book a Table at Fernway by Stories
                   </h2>
                   <p className="body-text" style={{ maxWidth: "48ch" }}>
-                    Reserve online via ReserveGo. For events and private dining, visit our{" "}
+                    Table booking is quick online via ReserveGo, or call us on {BUSINESS.phoneDisplay}. Weekends on
+                    the Bangalore Mysore Highway fill fast, so we recommend reserving ahead. For birthdays, live music
+                    evenings, and private dining, visit our{" "}
                     <Link href="/events" style={{ color: "var(--gold)", textDecoration: "underline" }}>
                       events page
                     </Link>
@@ -65,14 +82,14 @@ export default function ContactPage() {
                     className="btn-outline-dark"
                     style={{ alignSelf: "flex-start" }}
                   >
-                    Open in Maps
+                    Get Directions
                   </a>
                 </div>
               </RevealOnScroll>
 
               <RevealOnScroll delay={200}>
                 <div className="flex flex-col gap-4">
-                  <p className="section-label">Hours</p>
+                  <p className="section-label">Timings</p>
                   <p className="body-text">{BUSINESS.hoursLong}</p>
                   <p className="heading-display" style={{ fontSize: "1.5rem" }}>
                     {BUSINESS.hoursDisplay}
@@ -82,7 +99,7 @@ export default function ContactPage() {
 
               <RevealOnScroll delay={250}>
                 <div className="flex flex-col gap-4">
-                  <p className="section-label">Contact</p>
+                  <p className="section-label">Contact Number</p>
                   <a href={`tel:${BUSINESS.phone}`} className="body-text hover:underline" style={{ color: "var(--text-light)" }}>
                     {BUSINESS.phoneDisplay}
                   </a>
@@ -115,8 +132,46 @@ export default function ContactPage() {
           </div>
         </section>
 
-        <section className="section-bg-sand">
-          <div className="section-wrap section-pad">
+        <section className="section-bg-sand" aria-labelledby="contact-directions-heading">
+          <div className="section-wrap section-pad flex flex-col gap-10">
+            <RevealOnScroll>
+              <div className="flex flex-col gap-5">
+                <div className="divider" />
+                <p className="section-label">Getting Here</p>
+                <h2
+                  id="contact-directions-heading"
+                  className="heading-display"
+                  style={{ fontSize: "clamp(1.8rem, 3vw, 2.6rem)" }}
+                >
+                  Directions to Fernway by Stories
+                </h2>
+                <p className="body-text" style={{ maxWidth: "60ch" }}>
+                  Fernway is in {BUSINESS.address.locality} — on the Bangalore–Mysore Highway (NH 275, Mysore Road)
+                  between Bidadi and Ramanagara.
+                </p>
+              </div>
+            </RevealOnScroll>
+
+            <RevealOnScroll delay={100}>
+              <div className="contact-directions-grid">
+                <div className="flex flex-col gap-3">
+                  <h3 className="heading-display" style={{ fontSize: "1.4rem" }}>From Bangalore</h3>
+                  <p className="body-text">
+                    Head out of Bangalore city on Mysore Road towards Mysore. Continue past Bidadi and you&apos;ll
+                    reach Fernway at Mayaganahalli, shortly before Ramanagara — an easy weekend drive and a perfect
+                    first stop on a Bangalore–Mysore road trip.
+                  </p>
+                </div>
+                <div className="flex flex-col gap-3">
+                  <h3 className="heading-display" style={{ fontSize: "1.4rem" }}>From Mysore &amp; Ramanagara</h3>
+                  <p className="body-text">
+                    Driving towards Bangalore on the highway, pass Ramanagara and Fernway is a few minutes ahead at
+                    Mayaganahalli — a relaxed lunch or dinner stop before the final stretch into the city.
+                  </p>
+                </div>
+              </div>
+            </RevealOnScroll>
+
             <RevealOnScroll>
               <div className="relative w-full overflow-hidden" style={{ height: "360px", border: "1px solid var(--border-light)" }}>
                 <iframe
@@ -127,7 +182,7 @@ export default function ContactPage() {
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="Fernway by Stories location map"
+                  title="Map showing Fernway by Stories location in Mayaganahalli, Bangalore Mysore Highway"
                 />
               </div>
             </RevealOnScroll>

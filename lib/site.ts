@@ -17,6 +17,8 @@ export const BUSINESS = {
     postalCode: "562128",
     country: "India",
     full: "Q88J+78G, Mayaganahalli, Bengaluru, Karnataka 562128",
+    /** Human-readable location line used across the site */
+    locality: "Mayaganahalli, Bangalore Mysore Highway, near Ramanagara",
   },
   hours: "Daily · 1pm – 6am",
   hoursLong: "Daily · 1pm – Late Night",
@@ -57,24 +59,41 @@ export function getActiveSocialLinks() {
 }
 
 export const SEO = {
-  defaultTitle: "Fernway by Stories | Open-Air Lounge, Bengaluru",
+  defaultTitle: "Fernway by Stories | Garden Restaurant on Bangalore Mysore Highway",
   defaultDescription:
-    "Fernway by Stories — Bengaluru Mysore Highway has a new iconic landmark. Open-air seating, curated cocktails, globally inspired comfort food, and relaxed evenings under the open sky. Reserve your table.",
+    "Open-air garden restaurant and cafe in Mayaganahalli on the Bangalore Mysore Highway, near Ramanagara. North Indian food, live music and family dining. Book a table.",
   keywords: [
     "Fernway by Stories",
-    "Fernway Mayaganahalli",
-    "Bengaluru Mysore Highway restaurant",
-    "open-air lounge Bengaluru",
-    "restaurant Mayaganahalli",
-    "Stories Bar Kitchen",
-    "private dining Bengaluru",
-    "bar Bengaluru",
-    "events Bengaluru",
-    "shisha lounge Bengaluru",
-    "pet friendly restaurant Bengaluru",
+    "Fernway by Stories Bangalore",
+    "Fernway by Stories Bengaluru",
+    "Fernway by Stories Mayaganahalli",
+    "Fernway by Stories Mysore Road",
+    "Fernway by Stories Bangalore Mysore Highway",
+    "Fernway by Stories near Ramanagara",
+    "restaurants in Mayaganahalli",
+    "restaurants on Mysore Road",
+    "restaurants on Bangalore Mysore Highway",
+    "restaurants near Ramanagara",
+    "best highway restaurants near Bangalore",
+    "best highway restaurants near Bengaluru",
+    "garden dining near Bangalore",
+    "outdoor dining near Bengaluru",
+    "open air dining on Bangalore Mysore Highway",
+    "weekend drive restaurants near Bangalore",
+    "long drive restaurants near Bangalore",
+    "restaurants for Bangalore Mysore road trips",
   ],
   ogImage: "/ambience/1.webp",
 } as const;
+
+/** Areas the venue serves — used in structured data and copy */
+export const SERVICE_AREAS = [
+  "Mayaganahalli",
+  "Ramanagara",
+  "Bidadi",
+  "Bengaluru",
+  "Mysuru",
+] as const;
 
 export function pageUrl(path = "") {
   return `${SITE_URL}${path.startsWith("/") ? path : `/${path}`}`;

@@ -13,13 +13,20 @@ import {
 import { createPageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = createPageMetadata({
-  title: "Gallery",
+  title: "Gallery – Garden & Outdoor Dining Photos",
   description:
-    "Moments that linger — explore open-air ambience and kitchen photography at Fernway by Stories on Bengaluru Mysore Highway, Mayaganahalli.",
+    "Photos of garden dining, greenery and outdoor seating at Fernway by Stories, a scenic open-air restaurant on the Bangalore Mysore Highway in Mayaganahalli.",
   path: "/gallery",
   image: "/ambience/3.webp",
-  imageAlt: "Gallery of Fernway by Stories open-air seating and kitchen",
-  keywords: ["Fernway photos", "open-air gallery Bengaluru", "Bengaluru Mysore Highway restaurant photos"],
+  imageAlt: "Outdoor garden seating and greenery at Fernway by Stories",
+  keywords: [
+    "Fernway by Stories outdoor dining",
+    "outdoor restaurants on Bangalore Mysore Highway",
+    "restaurants with greenery in Mayaganahalli",
+    "scenic restaurants on Mysore Road",
+    "cafes with outdoor seating near Ramanagara",
+    "open air dining in Mayaganahalli",
+  ],
 });
 
 export default function GalleryPage() {
@@ -27,7 +34,11 @@ export default function GalleryPage() {
     <>
       <Nav />
       <main className="overflow-x-hidden">
-        <PageHero label="Moments That Linger" title="Gallery" />
+        <PageHero
+          label="Moments That Linger"
+          title="Gallery"
+          subtitle="Garden dining, greenery and outdoor seating on the Bangalore Mysore Highway"
+        />
 
         <section className="gallery-page-intro">
           <RevealOnScroll>
@@ -35,10 +46,11 @@ export default function GalleryPage() {
               <div className="divider mx-auto" />
               <p className="section-label">The Experience</p>
               <h2 className="heading-display gallery-page-intro-title">
-                A glimpse of <em style={{ color: "var(--gold)", fontStyle: "italic" }}>Fernway</em>
+                Outdoor dining at <em style={{ color: "var(--gold)", fontStyle: "italic" }}>Fernway</em>
               </h2>
               <p className="gallery-page-intro-lead">
-                Open-air ambience and plates from the kitchen — explore the full collection below.
+                Lush greenery, open-air garden seating, and plates from the kitchen — a look at one of the most
+                scenic outdoor restaurants in Mayaganahalli. Explore the full collection below.
               </p>
             </div>
           </RevealOnScroll>

@@ -43,7 +43,7 @@ function ImageModal({ item, onClose }: { item: ImageItem; onClose: () => void })
       >
         <Image
           src={item.url}
-          alt={item.title}
+          alt={`${item.title} — ${item.desc}`}
           width={1600}
           height={1200}
           className="max-h-[90vh] h-auto w-full rounded-sm border border-[rgba(var(--gold-rgb),0.2)] object-contain"
@@ -118,7 +118,7 @@ function BentoTile({
       {load ? (
         <Image
           src={item.url}
-          alt={item.title}
+          alt={`${item.title} — ${item.desc}`}
           fill
           className="gallery-bento-tile-img object-cover"
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 40vw"

@@ -14,25 +14,25 @@ const HOMEPAGE_SPANS = [
 
 const ambienceMeta = [
   { title: "Dusk on the Road", desc: "Bengaluru skyline as evening settles in." },
-  { title: "Open Sky", desc: "Where the city meets the horizon." },
+  { title: "Open Sky", desc: "Open-air dining beneath wide Mayaganahalli skies." },
   { title: "Evening Light", desc: "Soft glow over the terrace." },
   { title: "The Deck", desc: "Space to linger under the stars." },
-  { title: "Night Ambience", desc: "Mood, music, and open air." },
+  { title: "Night Ambience", desc: "Mood, live music, and open air." },
   { title: "City Views", desc: "Panoramas from above Mayaganahalli." },
-  { title: "Golden Hour", desc: "Sunset hues across open-air seating." },
+  { title: "Golden Hour", desc: "Sunset hues across the outdoor seating." },
   { title: "The Lounge", desc: "Unhurried corners to gather." },
   { title: "After Dark", desc: "When Fernway comes alive." },
   { title: "Sky-lit Tables", desc: "Dining beneath Bengaluru nights." },
-  { title: "Terrace Nights", desc: "An open-air escape in the city." },
+  { title: "Terrace Nights", desc: "An open-air escape from the city." },
   { title: "The Atmosphere", desc: "Every detail, intentionally set." },
   { title: "Under the Stars", desc: "Where stories unfold outdoors." },
-  { title: "Evening Escape", desc: "Your open-air sanctuary awaits." },
+  { title: "Evening Escape", desc: "Your open-air stop on the Bangalore Mysore Highway." },
 ];
 
 const foodMeta = [
   { title: "From the Kitchen", desc: "Artisan plates, plated with care." },
   { title: "Sky-lit Tables", desc: "Dining beneath Bengaluru nights." },
-  { title: "Signature Bites", desc: "Curated for open-air evenings." },
+  { title: "Signature Bites", desc: "Small plates and starters for open-air evenings." },
   { title: "Tonight's Spread", desc: "A taste of Fernway by Stories." },
 ];
 

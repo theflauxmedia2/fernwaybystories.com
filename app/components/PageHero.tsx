@@ -7,9 +7,11 @@ import { useLiteMotion } from "@/lib/use-lite-motion";
 type PageHeroProps = {
   label: string;
   title: string;
+  /** Descriptive line rendered inside the <h1>, below the display title */
+  subtitle?: string;
 };
 
-export default function PageHero({ label, title }: PageHeroProps) {
+export default function PageHero({ label, title, subtitle }: PageHeroProps) {
   const reduced = useReducedMotion();
   const lite = useLiteMotion();
 
@@ -26,7 +28,11 @@ export default function PageHero({ label, title }: PageHeroProps) {
       >
         <div className="divider mx-auto" style={{ opacity: 0.85 }} />
         <p className="section-label page-hero-label">{label}</p>
-        <h1 className="page-hero-title">{title}</h1>
+        <h1 className="page-hero-title">
+          {title}
+          {subtitle ? " " : null}
+          {subtitle ? <span className="page-hero-subtitle">{subtitle}</span> : null}
+        </h1>
       </motion.div>
     </section>
   );

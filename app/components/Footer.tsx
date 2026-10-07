@@ -92,7 +92,7 @@ export default function Footer() {
 
       <div className="site-footer-bar section-wrap">
         <p>© {new Date().getFullYear()} Fernway by Stories</p>
-        <p>Bengaluru, India</p>
+        <p>{BUSINESS.address.locality}</p>
       </div>
 
       <FooterCredits />
