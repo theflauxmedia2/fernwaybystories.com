@@ -84,17 +84,18 @@ async function verifyExport(outDir) {
     throw new Error("out/.htaccess missing — copy public/.htaccess into the export.");
   }
 
-  const cssDir = path.join(outDir, NEXT_TARGET, "static", "chunks");
-  if (!existsSync(cssDir)) {
-    throw new Error(`${NEXT_TARGET}/static/chunks/ missing — CSS will not load.`);
+  // Check the stylesheets the page actually links, not one folder:
+  // webpack writes CSS to static/css/, Turbopack to static/chunks/.
+  const cssHrefs = [...html.matchAll(/<link\b[^>]*\bhref="([^"]+\.css)"[^>]*>/g)].map((m) => m[1]);
+  if (cssHrefs.length === 0) {
+    throw new Error("index.html links no stylesheet — CSS will not load.");
+  }
+  const missingCss = cssHrefs.filter((href) => !existsSync(path.join(outDir, href)));
+  if (missingCss.length > 0) {
+    throw new Error(`Linked CSS missing from export: ${missingCss.join(", ")}`);
   }
 
-  const cssFiles = (await readdir(cssDir)).filter((name) => name.endsWith(".css"));
-  if (cssFiles.length === 0) {
-    throw new Error("No CSS files found in export.");
-  }
-
-  console.log(`  Verified CSS: ${NEXT_TARGET}/static/chunks/${cssFiles[0]}`);
+  console.log(`  Verified CSS: ${cssHrefs[0]}`);
   console.log(`  Verified .htaccess`);
 }
 
