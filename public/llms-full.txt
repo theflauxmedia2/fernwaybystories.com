@@ -2,7 +2,7 @@
 
 ## Summary
 
-Fernway by Stories is an open-air garden restaurant, cafe, and bar in Mayaganahalli on the Bangalore Mysore Highway (Mysore Road), near Ramanagara, Karnataka, India. Bengaluru Mysore Highway has a new iconic landmark — garden dining with nature-inspired ambience, North Indian and globally inspired comfort food, coffee, curated cocktails, shisha, live music, and event hosting. It is a popular food stop for Bangalore–Mysore road trips, weekend drives, family dining, group dining, and date nights. The venue operates daily from 1pm to 6am. It is associated with Stories Bar & Kitchen.
+Fernway by Stories is an open-air garden restaurant and cafe in Mayaganahalli on the Bangalore Mysore Highway (Mysore Road), near Ramanagara, Karnataka, India. Bengaluru Mysore Highway has a new iconic landmark — garden dining with nature-inspired ambience, North Indian and globally inspired comfort food, coffee, live music, and event hosting. It is a popular food stop for Bangalore–Mysore road trips, weekend drives, family dining, group dining, and date nights. The venue operates daily from 1pm to 6am. It is associated with Stories Bar & Kitchen.
 
 Website: https://fernwaybystories.com/
 
@@ -41,7 +41,7 @@ Coordinates: 12.765757250040997, 77.33076492952316
 Three pillars define the Fernway experience:
 
 1. **Open Air** — Open-air seating on Bengaluru Mysore Highway with greenery, warm lighting, and skyline views.
-2. **The Menu** — North Indian favourites like chatpata chicken tikka, globally inspired comfort food, veg and non-veg dishes, desserts, coffee, cocktails, and shisha.
+2. **The Menu** — North Indian favourites like chatpata chicken tikka, globally inspired comfort food, veg and non-veg dishes, desserts, and coffee.
 3. **The Mood** — Relaxed evenings with live music and unhurried dining.
 
 ## Menu categories
@@ -50,8 +50,7 @@ Three pillars define the Fernway experience:
 - Main Dishes (North Indian and global)
 - Vegetarian Selection
 - Desserts
-- Coffee, Cocktails & Beverages
-- Shisha Selection
+- Coffee, Cold Brews & Frappes
 
 Full menu page: https://fernwaybystories.com/menu
 

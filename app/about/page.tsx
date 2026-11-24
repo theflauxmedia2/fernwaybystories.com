@@ -104,7 +104,7 @@ export default function AboutPage() {
                     Thoughtfully <em style={{ color: "var(--gold)", fontStyle: "italic" }}>Crafted</em>
                   </h2>
                   <p className="body-text about-philosophy-lead">
-                    Our kitchen and bar share one approach: global comfort food and drinks that feel familiar yet
+                    Our kitchen shares one approach: global comfort food and drinks that feel familiar yet
                     considered — nothing fussy, everything intentional.
                   </p>
                 </header>
