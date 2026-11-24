@@ -31,7 +31,7 @@ export const blogPosts: BlogPost[] = [
     title: "A Late-Night Cafe on the Bangalore–Mysore Expressway, Open Till 6am",
     heroTitle: "Open Till 6am",
     description:
-      "Looking for cafes open till late night near Bangalore? Fernway by Stories in Mayaganahalli is open every day till 6am — midnight dining, coffee and cocktails on the expressway.",
+      "Looking for cafes open till late night near Bangalore? Fernway by Stories in Mayaganahalli is open every day till 6am — midnight dining and coffee on the expressway.",
     datePublished: "2026-11-24",
     image: "/ambience/15.webp",
     imageAlt: "Fernway by Stories garden lit up at night, a late-night cafe on the Bangalore–Mysore Expressway",
@@ -59,7 +59,7 @@ export const blogPosts: BlogPost[] = [
         list: [
           "North Indian favourites like chatpata chicken tikka and paneer tikka",
           "Global comfort food, small plates and quick bites",
-          "Desserts, coffee and a full cocktail and beverages menu",
+          "Desserts, coffee, cold brews and frappes",
           "Pet-friendly garden seating with space for groups",
         ],
       },
@@ -148,7 +148,7 @@ export const blogPosts: BlogPost[] = [
         heading: "Why it's different from a city music venue",
         paragraphs: [
           `Many live-music spots in the city are indoors and crowded. At Fernway, ${SATURDAY_BAND}, under the open sky, with tables spread across greenery — so you get the band and still get a proper dinner.`,
-          "Our kitchen serves North Indian favourites, global comfort food, desserts, coffee and cocktails, and we stay open till 6am, so the night doesn't have to end when the music does.",
+          "Our kitchen serves North Indian favourites, global comfort food, desserts and coffee, and we stay open till 6am, so the night doesn't have to end when the music does.",
         ],
       },
       {
@@ -187,7 +187,7 @@ export const blogPosts: BlogPost[] = [
         paragraphs: [],
         list: [
           `Open every day, ${BUSINESS.hoursDisplay} — lunch, dinner or a late-night stop`,
-          "North Indian food, global comfort plates, coffee and cocktails",
+          "North Indian food, global comfort plates, coffee and cold brews",
           "Spacious garden seating for families and groups — pet friendly too",
           "Live music on Friday and Saturday nights",
         ],
@@ -226,7 +226,7 @@ export const blogPosts: BlogPost[] = [
         list: [
           `Open every day, ${BUSINESS.hoursDisplay} — one of the few highway stops serving full meals through the night`,
           "Open-air garden seating with space for families, groups and pets",
-          "A full kitchen, not just snacks: North Indian favourites, global comfort food, coffee and cocktails",
+          "A full kitchen, not just snacks: North Indian favourites, global comfort food, coffee and cold brews",
         ],
       },
       {
@@ -251,6 +251,57 @@ export const blogPosts: BlogPost[] = [
         heading: "Find us",
         paragraphs: [
           `Address: ${BUSINESS.address.full}. Book a table online or call ${BUSINESS.phoneDisplay} — weekend evenings fill fast.`,
+        ],
+      },
+    ],
+  },
+  {
+    // WHY: targets budget searches; ₹800 for two confirmed by owner 25 Nov 2026 — update here if prices change
+    slug: "affordable-cafe-bangalore-mysore-highway",
+    title: "An Affordable Late-Night Cafe on the Bangalore–Mysore Highway: About ₹800 for Two",
+    heroTitle: "₹800 for Two",
+    description:
+      "Looking for a budget-friendly cafe near Bangalore? Fernway by Stories on the Bangalore–Mysore highway costs about ₹800 for two, with garden seating, live music and food till 6am.",
+    datePublished: "2026-11-25",
+    image: "/food/2.webp",
+    imageAlt: "Garden gazebo table for two at Fernway by Stories in Mayaganahalli",
+    keywords: [
+      "budget friendly cafes near Bangalore",
+      "affordable restaurants on Bangalore Mysore highway",
+      "cafes under 1000 for two near Bangalore",
+      "cheap late night food near Bangalore",
+      "affordable date night near Bangalore",
+    ],
+    sections: [
+      {
+        heading: "A garden night out that doesn't cost a fortune",
+        paragraphs: [
+          "Open-air garden seating, candlelit tables and live music usually come with a big bill. At Fernway by Stories, a meal for two costs about ₹800 — so a date night, a road-trip lunch or a late-night meal with friends stays easy on the wallet.",
+        ],
+      },
+      {
+        heading: "What ₹800 for two gets you",
+        paragraphs: [
+          "Our menu runs from quick bites to full meals, so you can keep it light or go all in:",
+        ],
+        list: [
+          "Soups, salads, chaat and small bites for sharing",
+          "Tikkas from the clay oven, including our chatpata chicken tikka",
+          "North Indian curries with fresh Indian breads, biryanis, fried rice and noodles",
+          "Pizzas, pastas, burgers, sushi and dumplings",
+          "Coffee, cold brews, frappes and desserts",
+        ],
+      },
+      {
+        heading: "Candlelight and live music",
+        paragraphs: [
+          `Candlelit garden tables are there every night. On weekends, ${FRIDAY_JAM}, and ${SATURDAY_BAND} — good food and music under the open sky.`,
+        ],
+      },
+      {
+        heading: "Find us",
+        paragraphs: [
+          `We're in Mayaganahalli on the Bangalore–Mysore highway, between Bidadi and Ramanagara, open every day from ${BUSINESS.hoursDisplay}. Address: ${BUSINESS.address.full}. Book a table online or call ${BUSINESS.phoneDisplay}.`,
         ],
       },
     ],

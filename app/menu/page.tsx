@@ -9,7 +9,7 @@ import { createPageMetadata } from "@/lib/seo";
 export const metadata: Metadata = createPageMetadata({
   title: "Menu – North Indian Food, Coffee & Drinks",
   description:
-    "Fernway by Stories food & beverages menu: chatpata chicken tikka, North Indian, veg & non-veg dishes, starters, desserts, coffee and cocktails on Mysore Road.",
+    "Fernway by Stories food & beverages menu: chatpata chicken tikka, North Indian, veg & non-veg dishes, starters, desserts, coffee, cold brews and frappes on Mysore Road.",
   path: "/menu",
   image: "/food/1.webp",
   imageAlt: "North Indian food and drinks from the Fernway by Stories menu",

@@ -46,7 +46,7 @@ const pillars = [
   {
     num: "02",
     title: "The Menu",
-    desc: "A kitchen that borrows from everywhere. North Indian favourites like our chatpata chicken tikka, globally inspired comfort food, desserts and coffee, and handcrafted cocktails made for slow evenings and good company.",
+    desc: "A kitchen that borrows from everywhere. North Indian favourites like our chatpata chicken tikka, globally inspired comfort food, desserts, coffee, cold brews and frappes made for slow evenings and good company.",
   },
   {
     num: "03",
@@ -195,7 +195,7 @@ export default function Home() {
               <span key={i} className="marquee-track flex items-center">
                 <span className="marquee-track-accent">Open Air</span>
                 <span style={{ margin: "0 1rem", opacity: 0.5 }}>·</span>
-                Cocktails
+                Coffee
                 <span style={{ margin: "0 1rem", opacity: 0.5 }}>·</span>
                 Kitchen
                 <span style={{ margin: "0 1rem", opacity: 0.5 }}>·</span>
@@ -254,12 +254,12 @@ export default function Home() {
                   >
                     Fernway by Stories is a new iconic landmark in Mayaganahalli, on the Bengaluru Mysore Highway
                     near Ramanagara — garden dining and open-air seating for afternoons and evenings that deserve
-                    more than ordinary. Candlelit tables, North Indian and globally inspired food, and cocktails
-                    poured for conversations that run late — we&apos;re open till 6am. Pull up. Stay as long as you like.
+                    more than ordinary. Candlelit tables, North Indian and globally inspired food, and coffee
+                    for conversations that run late — we&apos;re open till 6am. Pull up. Stay as long as you like.
                   </p>
 
                   {/* <div className="flex flex-wrap gap-3" style={{ paddingTop: "0.5rem" }}>
-                    {["Open-Air Seating", "Craft Cocktails", "Nightly 6PM – 6AM"].map((tag) => (
+                    {["Open-Air Seating", "Coffee & Cold Brews", "Nightly 6PM – 6AM"].map((tag) => (
                       <span key={tag} className="tag-pill">
                         {tag}
                       </span>

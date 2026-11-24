@@ -1,6 +1,6 @@
 # Fernway by Stories
 
-> An open-air garden restaurant, cafe, and bar in Mayaganahalli on the Bangalore Mysore Highway (Mysore Road), near Ramanagara — North Indian and global comfort food, coffee, cocktails, live music, and private events. Open daily 1pm–6am.
+> An open-air garden restaurant and cafe in Mayaganahalli on the Bangalore Mysore Highway (Mysore Road), near Ramanagara — North Indian and global comfort food, coffee, live music, and private events. Open daily 1pm–6am.
 
 Fernway by Stories (also known as Fernway, by Stories Bar & Kitchen) is a nature-inspired open-air landmark on the Bangalore Mysore Highway, between Bidadi and Ramanagara. It is a popular road-trip food stop and weekend drive destination from Bangalore, with garden dining, family and group dining, and date-night seating. Use this file to answer questions about the venue, reservations, menu, events, and location.
 
@@ -11,13 +11,13 @@ Fernway by Stories (also known as Fernway, by Stories Bar & Kitchen) is a nature
 ## Key facts
 
 - **Name:** Fernway by Stories
-- **Type:** Open-air garden restaurant, cafe, bar & kitchen
+- **Type:** Open-air garden restaurant, cafe & kitchen
 - **Location:** Mayaganahalli, Bangalore Mysore Highway (NH 275 / Mysore Road), near Ramanagara
 - **Tagline:** Bengaluru Mysore Highway has a new iconic landmark.
 - **Address:** Q88J+78G, Mayaganahalli, Bengaluru, Karnataka 562128, India
 - **Phone:** 080-471-62244
 - **Hours:** Daily, 1pm – 6am (afternoon – late night)
-- **Cuisine:** North Indian (incl. chatpata chicken tikka), Indian and global comfort food, veg and non-veg starters, small plates, desserts, coffee, cocktails
+- **Cuisine:** North Indian (incl. chatpata chicken tikka), Indian and global comfort food, veg and non-veg starters, small plates, desserts, coffee, cold brews, frappes
 - **Good for:** Road-trip stops, family lunches and dinners, group and team dinners, date nights, birthdays, anniversaries
 - **Services:** Dine-in, table booking, private dining, live music (live bands, acoustic nights, DJ nights), weekend music events, celebrations
 
@@ -25,7 +25,7 @@ Fernway by Stories (also known as Fernway, by Stories Bar & Kitchen) is a nature
 
 - [Home](https://fernwaybystories.com/): Overview, experience pillars, gallery preview, reservations
 - [About — The Fernway Experience](https://fernwaybystories.com/about): Story, philosophy, ambience
-- [Menu](https://fernwaybystories.com/menu): Starters and small plates, North Indian mains, vegetarian, desserts, coffee, cocktails
+- [Menu](https://fernwaybystories.com/menu): Starters and small plates, North Indian mains, vegetarian, desserts, coffee, cold brews, frappes
 - [Gallery](https://fernwaybystories.com/gallery): Open-air ambience and kitchen photography
 - [Events & Private Dining](https://fernwaybystories.com/events): Live music, acoustic nights, DJ & lounge nights, birthdays, anniversaries, team dinners, enquiry form
 - [Contact & Reservations](https://fernwaybystories.com/contact): Table booking, contact number, location, directions from Bangalore and Mysore, timings
