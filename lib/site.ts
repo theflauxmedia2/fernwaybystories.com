@@ -59,10 +59,21 @@ export function getActiveSocialLinks() {
 }
 
 export const SEO = {
-  defaultTitle: "Fernway by Stories | Garden Restaurant on Bangalore Mysore Highway",
+  // WHY: panel/searchers look for "cafe", "late night" and "expressway" — keep those words in the title
+  defaultTitle: "Fernway by Stories | Late-Night Cafe on Bangalore–Mysore Expressway",
   defaultDescription:
-    "Open-air garden restaurant and cafe in Mayaganahalli on the Bangalore Mysore Highway, near Ramanagara. North Indian food, live music and family dining. Book a table.",
+    "Late-night garden cafe in Mayaganahalli on the Bangalore–Mysore Expressway, open till 6am. Candlelit dinners, live music & North Indian food. Book a table.",
   keywords: [
+    "late night cafes in Bangalore",
+    "cafes open till late night",
+    "cafes open till 6am",
+    "midnight dining places",
+    "cafes on Bangalore Mysore Expressway",
+    "cafes in Mayaganahalli",
+    "candle light dinner near Bangalore",
+    "date night places near Bangalore",
+    "best cafe for couples",
+    "live music dinner near Bangalore",
     "Fernway by Stories",
     "Fernway by Stories Bangalore",
     "Fernway by Stories Bengaluru",
