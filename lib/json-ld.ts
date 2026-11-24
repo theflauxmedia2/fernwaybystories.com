@@ -86,7 +86,6 @@ export function getStructuredDataGraph() {
           "Desserts",
           "Coffee",
           "Cocktails",
-          "Shisha",
         ],
         keywords:
           "garden restaurant, outdoor dining, open air dining, highway restaurant, cafe, live music, family dining, road trip food stop, Bangalore Mysore Highway, Mysore Road, Mayaganahalli, Ramanagara",

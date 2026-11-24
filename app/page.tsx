@@ -46,7 +46,7 @@ const pillars = [
   {
     num: "02",
     title: "The Menu",
-    desc: "A kitchen that borrows from everywhere. North Indian favourites like our chatpata chicken tikka, globally inspired comfort food, desserts and coffee, handcrafted cocktails, and a shisha selection made for slow evenings and good company.",
+    desc: "A kitchen that borrows from everywhere. North Indian favourites like our chatpata chicken tikka, globally inspired comfort food, desserts and coffee, and handcrafted cocktails made for slow evenings and good company.",
   },
   {
     num: "03",
@@ -199,7 +199,7 @@ export default function Home() {
                 <span style={{ margin: "0 1rem", opacity: 0.5 }}>·</span>
                 Kitchen
                 <span style={{ margin: "0 1rem", opacity: 0.5 }}>·</span>
-                Shisha
+                Live Music
                 <span style={{ margin: "0 1rem", opacity: 0.5 }}>·</span>
                 <span className="marquee-track-accent">Bengaluru</span>
                 <span style={{ margin: "0 1rem", opacity: 0.5 }}>·</span>
