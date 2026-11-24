@@ -20,6 +20,10 @@ export const homeFaqs: FaqItem[] = [
     answer: `Yes. Fernway is open every day from ${BUSINESS.hoursDisplay} — one of the few late-night cafes on the Bangalore–Mysore Expressway. Drop in for midnight dining, late-night coffee, cocktails and food after a long drive or a night out.`,
   },
   {
+    question: "Which restaurants on the Bangalore–Mysore highway are open late at night?",
+    answer: `Fernway by Stories in Mayaganahalli, between Bidadi and Ramanagara, is open every day from ${BUSINESS.hoursDisplay} — so whether you want lunch, dinner or a 3am meal, there's a full garden cafe and restaurant open on the Bangalore–Mysore highway.`,
+  },
+  {
     question: "Is Fernway good for a date night or candlelight dinner?",
     answer:
       "Yes. Candlelit garden tables, greenery and live music make Fernway a favourite with couples for date nights and candlelight dinners — an easy drive out of Bengaluru, away from city noise.",

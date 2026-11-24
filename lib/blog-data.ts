@@ -200,6 +200,61 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    // WHY: targets "best restaurant/cafe on Bangalore Mysore highway" without claiming to be "the best"
+    slug: "best-restaurant-cafe-bangalore-mysore-highway",
+    title: "Looking for the Best Restaurant or Cafe on the Bangalore–Mysore Highway? Lunch, Dinner or 3am",
+    heroTitle: "Lunch to 3am",
+    description:
+      "What makes a good restaurant or cafe stop on the Bangalore–Mysore highway? Fernway by Stories in Mayaganahalli serves lunch, dinner and late-night food, open daily 1pm–6am.",
+    datePublished: "2026-11-25",
+    image: "/ambience/11.webp",
+    imageAlt: "Fernway by Stories garden path and open-air dining area on the Bangalore–Mysore highway",
+    keywords: [
+      "best restaurant on Bangalore Mysore highway",
+      "best cafe on Bangalore Mysore highway",
+      "restaurants on Bangalore Mysore highway",
+      "cafes on Bangalore Mysore highway",
+      "where to eat on Mysore Road",
+    ],
+    sections: [
+      {
+        heading: "What makes the best highway stop?",
+        paragraphs: [
+          "The best restaurant or cafe on the Bangalore–Mysore highway is the one that fits your drive: open when you're passing, easy to pull into, with room to sit and food worth stopping for. Fernway by Stories, in Mayaganahalli between Bidadi and Ramanagara, is built around exactly that.",
+        ],
+        list: [
+          `Open every day, ${BUSINESS.hoursDisplay} — one of the few highway stops serving full meals through the night`,
+          "Open-air garden seating with space for families, groups and pets",
+          "A full kitchen, not just snacks: North Indian favourites, global comfort food, coffee and cocktails",
+        ],
+      },
+      {
+        heading: "Lunch on the way to Mysuru",
+        paragraphs: [
+          "We open at 1pm, so a late lunch here breaks up the drive nicely. Try North Indian favourites like chatpata chicken tikka and paneer tikka, or keep it light with small plates, quick bites and coffee in the garden.",
+        ],
+      },
+      {
+        heading: "Dinner under the open sky",
+        paragraphs: [
+          `Evenings bring candlelit garden tables every night. On weekends there's more: ${FRIDAY_JAM}, and ${SATURDAY_BAND}. It's a popular choice for date nights, family dinners and group celebrations.`,
+        ],
+      },
+      {
+        heading: "Late night, when everything else is closed",
+        paragraphs: [
+          "Driving back to Bengaluru after midnight, or heading out late? Our kitchen keeps cooking till 6am, so you can sit down for a proper meal, dessert or a drink long after most highway stops have shut.",
+        ],
+      },
+      {
+        heading: "Find us",
+        paragraphs: [
+          `Address: ${BUSINESS.address.full}. Book a table online or call ${BUSINESS.phoneDisplay} — weekend evenings fill fast.`,
+        ],
+      },
+    ],
+  },
 ];
 
 export function getBlogPost(slug: string) {
