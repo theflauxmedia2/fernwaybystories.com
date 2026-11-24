@@ -59,8 +59,9 @@ export function getActiveSocialLinks() {
 }
 
 export const SEO = {
-  // WHY: panel/searchers look for "cafe", "late night" and "expressway" — keep those words in the title
-  defaultTitle: "Fernway by Stories | Late-Night Cafe on Bangalore–Mysore Expressway",
+  // WHY: searchers type "cafe"/"restaurant" + "Bangalore Mysore highway"; keywords lead because Google cuts titles near 60 chars.
+  // "Expressway" stays in the description and homepage heading.
+  defaultTitle: "Late-Night Cafe & Restaurant on Bangalore–Mysore Highway | Fernway by Stories",
   defaultDescription:
     "Late-night garden cafe in Mayaganahalli on the Bangalore–Mysore Expressway, open till 6am. Candlelit dinners, live music & North Indian food. Book a table.",
   keywords: [
