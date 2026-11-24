@@ -72,14 +72,4 @@ export const menuCategories: MenuCategory[] = [
       { name: "Zero Proof Spritz", desc: "Botanicals, soda, fresh herbs", diet: "both" },
     ],
   },
-  {
-    id: "shisha",
-    label: "Shisha Selection",
-    intro: "Classic and seasonal shisha blends for slow evenings with good company.",
-    items: [
-      { name: "Classic Mint", desc: "Cool, refreshing finish", diet: "both" },
-      { name: "Double Apple", desc: "Traditional blend", diet: "both" },
-      { name: "Seasonal Fusion", desc: "Ask your server for today's pairing", diet: "both" },
-    ],
-  },
 ];
