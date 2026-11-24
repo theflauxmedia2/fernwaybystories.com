@@ -8,7 +8,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const lastModified = new Date();
 
   return SITE_ROUTES.map(({ path, changeFrequency, priority }) => ({
-    url: pageUrl(path === "/" ? "" : path),
+    // Trailing slash matches canonical tags (trailingSlash: true); static folders 301 /x → /x/
+    url: pageUrl(path === "/" ? "/" : `${path}/`),
     lastModified,
     changeFrequency,
     priority,

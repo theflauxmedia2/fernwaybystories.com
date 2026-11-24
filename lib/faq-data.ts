@@ -16,6 +16,15 @@ export const homeFaqs: FaqItem[] = [
     answer: `We're open every day from ${BUSINESS.hoursDisplay}, so you can stop by for lunch, dinner, or late-night plates and drinks under the open sky.`,
   },
   {
+    question: "Is Fernway a late-night cafe?",
+    answer: `Yes. Fernway is open every day from ${BUSINESS.hoursDisplay} — one of the few late-night cafes on the Bangalore–Mysore Expressway. Drop in for midnight dining, late-night coffee, cocktails and food after a long drive or a night out.`,
+  },
+  {
+    question: "Is Fernway good for a date night or candlelight dinner?",
+    answer:
+      "Yes. Candlelit garden tables, greenery and live music make Fernway a favourite with couples for date nights and candlelight dinners — an easy drive out of Bengaluru, away from city noise.",
+  },
+  {
     question: "How do I book a table at Fernway by Stories?",
     answer: `Reserve online through our table booking link, call the Fernway by Stories contact number ${BUSINESS.phoneDisplay}, or message us on WhatsApp. Weekends fill fast, so we recommend booking ahead.`,
   },
@@ -32,7 +41,7 @@ export const homeFaqs: FaqItem[] = [
   {
     question: "Does Fernway by Stories have live music?",
     answer:
-      "Yes. We host live bands, acoustic music nights, DJ and lounge nights, and weekend music events in our open-air garden. Follow us on Instagram or see our events page for what's coming up.",
+      "Yes. Every Friday we host a candlelight midnight jamming session from 11pm to 2am, and every Saturday a live band plays in our open-air garden. We also run DJ and lounge nights and themed evenings — follow us on Instagram or see our events page for what's coming up.",
   },
   {
     question: "Can I celebrate a birthday or anniversary at Fernway?",

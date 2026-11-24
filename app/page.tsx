@@ -239,8 +239,8 @@ export default function Home() {
                       letterSpacing: "-0.015em",
                     }}
                   >
-                    An Open-Air Garden Restaurant on{" "}
-                    <em style={{ color: "var(--gold)", fontStyle: "italic" }}>Bangalore Mysore Highway</em>
+                    A Late-Night Garden Cafe &amp; Restaurant on the{" "}
+                    <em style={{ color: "var(--gold)", fontStyle: "italic" }}>Bangalore–Mysore Expressway</em>
                   </h2>
                   <p
                     style={{
@@ -255,7 +255,7 @@ export default function Home() {
                     Fernway by Stories is a new iconic landmark in Mayaganahalli, on the Bengaluru Mysore Highway
                     near Ramanagara — garden dining and open-air seating for afternoons and evenings that deserve
                     more than ordinary. Candlelit tables, North Indian and globally inspired food, and cocktails
-                    poured for conversations that run late. Pull up. Stay as long as you like.
+                    poured for conversations that run late — we&apos;re open till 6am. Pull up. Stay as long as you like.
                   </p>
 
                   {/* <div className="flex flex-wrap gap-3" style={{ paddingTop: "0.5rem" }}>

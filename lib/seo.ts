@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { siteIcons } from "./favicons";
 import { BUSINESS, SEO, SITE_URL, pageUrl } from "./site";
+import { blogPosts } from "./blog-data";
 
 export type ChangeFrequency = "always" | "hourly" | "daily" | "weekly" | "monthly" | "yearly" | "never";
 
@@ -15,6 +16,12 @@ export const SITE_ROUTES: {
   { path: "/gallery", changeFrequency: "weekly", priority: 0.8 },
   { path: "/events", changeFrequency: "weekly", priority: 0.85 },
   { path: "/contact", changeFrequency: "monthly", priority: 0.9 },
+  { path: "/blog", changeFrequency: "weekly", priority: 0.7 },
+  ...blogPosts.map(({ slug }) => ({
+    path: `/blog/${slug}`,
+    changeFrequency: "monthly" as const,
+    priority: 0.6,
+  })),
 ];
 
 export function absoluteAssetUrl(path: string) {

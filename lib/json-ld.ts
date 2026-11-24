@@ -2,6 +2,7 @@ import { SITE_LOGO } from "./favicons";
 import { BUSINESS, SEO, SERVICE_AREAS, SITE_URL, isActiveSocialUrl, pageUrl } from "./site";
 import { absoluteAssetUrl } from "./seo";
 import type { FaqItem } from "./faq-data";
+import type { BlogPost } from "./blog-data";
 
 const organizationId = `${SITE_URL}/#organization`;
 const websiteId = `${SITE_URL}/#website`;
@@ -63,7 +64,8 @@ export function getStructuredDataGraph() {
         },
       },
       {
-        "@type": "Restaurant",
+        // Both types so Google can match "cafe" searches as well as "restaurant"
+        "@type": ["Restaurant", "CafeOrCoffeeShop"],
         "@id": restaurantId,
         name: BUSINESS.name,
         url: SITE_URL,
@@ -137,6 +139,26 @@ export function getStructuredDataGraph() {
         ...(sameAs.length > 0 ? { sameAs } : {}),
       },
     ],
+  };
+}
+
+/** BlogPosting schema for one journal post, linked to the site's organization */
+export function getBlogPostingStructuredData(post: BlogPost) {
+  const url = pageUrl(`/blog/${post.slug}`);
+  return {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "@id": `${url}#article`,
+    headline: post.title,
+    description: post.description,
+    image: absoluteAssetUrl(post.image),
+    datePublished: post.datePublished,
+    dateModified: post.datePublished,
+    mainEntityOfPage: url,
+    keywords: post.keywords.join(", "),
+    author: { "@id": organizationId },
+    publisher: { "@id": organizationId },
+    about: { "@id": restaurantId },
   };
 }
 
