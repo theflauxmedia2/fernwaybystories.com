@@ -85,8 +85,6 @@ export function getStructuredDataGraph() {
           "Vegetarian",
           "Desserts",
           "Coffee",
-          "Cocktails",
-          "Shisha",
         ],
         keywords:
           "garden restaurant, outdoor dining, open air dining, highway restaurant, cafe, live music, family dining, road trip food stop, Bangalore Mysore Highway, Mysore Road, Mayaganahalli, Ramanagara",
@@ -99,7 +97,8 @@ export function getStructuredDataGraph() {
           "Pet friendly",
           "Private dining",
         ].map((name) => ({ "@type": "LocationFeatureSpecification", name, value: true })),
-        priceRange: "₹₹₹",
+        // Price confirmed by owner 25 Nov 2026 (matches EazyDiner listing)
+        priceRange: "₹800 for two (approx.)",
         telephone: BUSINESS.phone,
         address: {
           "@type": "PostalAddress",

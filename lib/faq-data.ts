@@ -17,7 +17,7 @@ export const homeFaqs: FaqItem[] = [
   },
   {
     question: "Is Fernway a late-night cafe?",
-    answer: `Yes. Fernway is open every day from ${BUSINESS.hoursDisplay} — one of the few late-night cafes on the Bangalore–Mysore Expressway. Drop in for midnight dining, late-night coffee, cocktails and food after a long drive or a night out.`,
+    answer: `Yes. Fernway is open every day from ${BUSINESS.hoursDisplay} — one of the few late-night cafes on the Bangalore–Mysore Expressway. Drop in for midnight dining, late-night coffee and food after a long drive or a night out.`,
   },
   {
     question: "Which restaurants on the Bangalore–Mysore highway are open late at night?",
@@ -29,13 +29,18 @@ export const homeFaqs: FaqItem[] = [
       "Yes. Candlelit garden tables, greenery and live music make Fernway a favourite with couples for date nights and candlelight dinners — an easy drive out of Bengaluru, away from city noise.",
   },
   {
+    question: "What is the price for two at Fernway by Stories?",
+    answer:
+      "A meal for two at Fernway by Stories costs about ₹800, which makes it an affordable garden cafe and restaurant stop on the Bangalore–Mysore highway — whether for lunch, dinner or a late-night meal.",
+  },
+  {
     question: "How do I book a table at Fernway by Stories?",
     answer: `Reserve online through our table booking link, call the Fernway by Stories contact number ${BUSINESS.phoneDisplay}, or message us on WhatsApp. Weekends fill fast, so we recommend booking ahead.`,
   },
   {
     question: "What food does Fernway by Stories serve?",
     answer:
-      "Our menu brings together North Indian favourites like chatpata chicken tikka and paneer tikka, global comfort food, veg and non-veg starters, small plates and quick bites, desserts, coffee, cocktails, and a full beverages menu.",
+      "Our menu brings together North Indian favourites like chatpata chicken tikka and paneer tikka, global comfort food, veg and non-veg starters, small plates and quick bites, desserts, coffee, cold brews and frappes.",
   },
   {
     question: "Is Fernway good for families and groups?",
