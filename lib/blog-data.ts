@@ -1,3 +1,8 @@
+// Blog posts live as one JSON file each in content/blog/ (D-27 in flaux-surface): adding a post = adding a file
+// and committing; the deploy workflow builds and publishes it. Read at build time only (static export), so every
+// importer must be a server module (today: app/blog pages, lib/seo.ts, lib/json-ld.ts).
+import { readdirSync, readFileSync } from "node:fs";
+import path from "node:path";
 import { BUSINESS } from "./site";
 
 export type BlogSection = {
@@ -21,292 +26,54 @@ export type BlogPost = {
   sections: BlogSection[];
 };
 
-// Facts used here must stay true: hours, Friday candlelight jam 11pm–2am, Saturday live band, candlelight nightly.
-const FRIDAY_JAM = "every Friday, a candlelight midnight jamming session runs from 11pm to 2am";
-const SATURDAY_BAND = "every Saturday night a live band plays in the garden";
+// Facts used in posts must stay true, so posts say {{name}} and the value comes from here (one place to change).
+const FACTS: Record<string, string> = {
+  hoursDisplay: BUSINESS.hoursDisplay,
+  address: BUSINESS.address.full,
+  phone: BUSINESS.phoneDisplay,
+  fridayJam: "every Friday, a candlelight midnight jamming session runs from 11pm to 2am",
+  saturdayBand: "every Saturday night a live band plays in the garden",
+};
 
-export const blogPosts: BlogPost[] = [
-  {
-    slug: "late-night-cafe-bangalore-mysore-expressway",
-    title: "A Late-Night Cafe on the Bangalore–Mysore Expressway, Open Till 6am",
-    heroTitle: "Open Till 6am",
-    description:
-      "Looking for cafes open till late night near Bangalore? Fernway by Stories in Mayaganahalli is open every day till 6am — midnight dining and coffee on the expressway.",
-    datePublished: "2026-11-24",
-    image: "/ambience/15.webp",
-    imageAlt: "Fernway by Stories garden lit up at night, a late-night cafe on the Bangalore–Mysore Expressway",
-    keywords: [
-      "late night cafes in Bangalore",
-      "cafes open till late night",
-      "cafes open till 6am",
-      "midnight dining places",
-      "late night food near Bangalore",
-      "cafes on Bangalore Mysore Expressway",
-    ],
-    sections: [
-      {
-        heading: "When the city closes, Fernway is just getting started",
-        paragraphs: [
-          `Plenty of cafes wind down around midnight. Fernway by Stories stays open every day from ${BUSINESS.hoursDisplay}, which makes it one of the few places on the Bangalore–Mysore Expressway where you can sit down for a proper meal, a coffee or a drink long after the city has gone quiet.`,
-          "We call ourselves a cafe because that is how most people search for a late-night spot — but Fernway is a full garden restaurant, with a kitchen that keeps cooking through the night.",
-        ],
-      },
-      {
-        heading: "What midnight dining looks like here",
-        paragraphs: [
-          "Open-air garden tables, warm lights, candlelit tables every night and a menu built for long conversations.",
-        ],
-        list: [
-          "North Indian favourites like chatpata chicken tikka and paneer tikka",
-          "Global comfort food, small plates and quick bites",
-          "Desserts, coffee, cold brews and frappes",
-          "Pet-friendly garden seating with space for groups",
-        ],
-      },
-      {
-        heading: "Where we are",
-        paragraphs: [
-          `Fernway is in Mayaganahalli, between Bidadi and Ramanagara, right on the Bangalore–Mysore Expressway (Mysore Road). Address: ${BUSINESS.address.full}. It's an easy late-night drive out of Bengaluru, and an easy stop if you're driving back from Mysuru.`,
-          `Planning a late night with friends? Book a table online or call ${BUSINESS.phoneDisplay} — weekends fill fast.`,
-        ],
-      },
-    ],
-  },
-  {
-    slug: "candlelight-dinner-near-bangalore",
-    title: "Candlelight Dinner Near Bangalore: Date Nights Under the Open Sky",
-    heroTitle: "Candlelight",
-    description:
-      "Planning a candlelight dinner near Bangalore? Fernway by Stories sets candlelit garden tables every night — a date night spot for couples on the Bangalore–Mysore Expressway.",
-    datePublished: "2026-11-24",
-    image: "/ambience/14.webp",
-    imageAlt: "Garden lights coming on at dusk at Fernway by Stories, a date night spot near Bangalore",
-    keywords: [
-      "candle light dinner near Bangalore",
-      "candle light dinner in Bangalore",
-      "date night places near Bangalore",
-      "best cafe for couples",
-      "romantic places near Bangalore for couples",
-    ],
-    sections: [
-      {
-        heading: "Candlelight every night — no special booking needed",
-        paragraphs: [
-          "At Fernway by Stories, candlelit tables aren't a package you have to pre-book. Every night, the garden is set with candles, warm lights and greenery, so any dinner here can be a candlelight dinner.",
-          "It's why couples drive out from Bengaluru for date nights, anniversaries and birthdays: open sky above, no city noise, and nobody rushing you out — we're open till 6am.",
-        ],
-      },
-      {
-        heading: "The best night for couples: Friday candlelight jamming",
-        paragraphs: [
-          `If you can only pick one night, pick Friday — ${FRIDAY_JAM}. Soft live music, candles on every table and a late dinner make it our most romantic evening of the week.`,
-        ],
-      },
-      {
-        heading: "Make it a date",
-        paragraphs: ["A few ideas from our team:"],
-        list: [
-          "Arrive around sunset and stay for dinner under the stars",
-          "Share North Indian starters, then a slow main course and dessert",
-          "Celebrating something? Mention it when you book and we'll help with seating",
-        ],
-      },
-      {
-        heading: "Getting here",
-        paragraphs: [
-          `Fernway is in Mayaganahalli on the Bangalore–Mysore Expressway, between Bidadi and Ramanagara — an easy drive out of the city. Reserve a table online or call ${BUSINESS.phoneDisplay}.`,
-        ],
-      },
-    ],
-  },
-  {
-    slug: "live-music-dinner-near-bangalore",
-    title: "Dinner With Live Music Near Bangalore: Friday Jams & Saturday Bands",
-    heroTitle: "Live Music",
-    description:
-      "Want live bands while having dinner? Fernway by Stories hosts a candlelight jam every Friday (11pm–2am) and a live band every Saturday, in an open-air garden near Bangalore.",
-    datePublished: "2026-11-24",
-    image: "/ambience/13.webp",
-    imageAlt: "Open-air shell and garden tables at Fernway by Stories, where music nights happen",
-    keywords: [
-      "live music restaurants near Bangalore",
-      "live band restaurants near me",
-      "live bands while having dinner",
-      "live music dinner Bangalore Mysore highway",
-    ],
-    sections: [
-      {
-        heading: "Our weekly music nights",
-        paragraphs: ["Music at Fernway is built around dinner — loud enough to feel, soft enough to talk over."],
-        list: [
-          "Friday — candlelight midnight jamming, 11pm to 2am",
-          "Saturday — live band night",
-          "Plus DJ and lounge nights, themed evenings and seasonal events through the year",
-        ],
-      },
-      {
-        heading: "Why it's different from a city music venue",
-        paragraphs: [
-          `Many live-music spots in the city are indoors and crowded. At Fernway, ${SATURDAY_BAND}, under the open sky, with tables spread across greenery — so you get the band and still get a proper dinner.`,
-          "Our kitchen serves North Indian favourites, global comfort food, desserts and coffee, and we stay open till 6am, so the night doesn't have to end when the music does.",
-        ],
-      },
-      {
-        heading: "Plan your night",
-        paragraphs: [
-          `Music nights are our busiest, so book ahead online or call ${BUSINESS.phoneDisplay}. For the latest line-up, check our events page or Instagram.`,
-        ],
-      },
-    ],
-  },
-  {
-    slug: "bangalore-mysore-road-trip-stop-mayaganahalli",
-    title: "Bangalore to Mysore Road Trip: A Stop Worth Making in Mayaganahalli",
-    heroTitle: "Road Trip Stop",
-    description:
-      "Driving the Bangalore–Mysore Expressway? Fernway by Stories in Mayaganahalli is an open-air cafe and restaurant stop, open daily 1pm–6am, between Bidadi and Ramanagara.",
-    datePublished: "2026-11-24",
-    image: "/ambience/12.webp",
-    imageAlt: "Fernway by Stories sign in the garden at Mayaganahalli on the Bangalore–Mysore Expressway",
-    keywords: [
-      "cafes on Bangalore Mysore Expressway",
-      "restaurants on Bangalore Mysore highway",
-      "cafes in Mayaganahalli",
-      "Bangalore Mysore road trip food stop",
-      "restaurants near Ramanagara",
-    ],
-    sections: [
-      {
-        heading: "A real meal, not just a quick break",
-        paragraphs: [
-          "The Bangalore–Mysore Expressway made the drive faster — and made good places to stop harder to notice. Fernway by Stories, in Mayaganahalli between Bidadi and Ramanagara, is worth slowing down for: an open-air garden cafe and restaurant with space to stretch out.",
-        ],
-      },
-      {
-        heading: "What you'll find",
-        paragraphs: [],
-        list: [
-          `Open every day, ${BUSINESS.hoursDisplay} — lunch, dinner or a late-night stop`,
-          "North Indian food, global comfort plates, coffee and cold brews",
-          "Spacious garden seating for families and groups — pet friendly too",
-          "Live music on Friday and Saturday nights",
-        ],
-      },
-      {
-        heading: "Find us",
-        paragraphs: [
-          `Address: ${BUSINESS.address.full}. Use the map on our contact page for directions, or call ${BUSINESS.phoneDisplay}.`,
-        ],
-      },
-    ],
-  },
-  {
-    // WHY: targets "best restaurant/cafe on Bangalore Mysore highway" without claiming to be "the best"
-    slug: "best-restaurant-cafe-bangalore-mysore-highway",
-    title: "Looking for the Best Restaurant or Cafe on the Bangalore–Mysore Highway? Lunch, Dinner or 3am",
-    heroTitle: "Lunch to 3am",
-    description:
-      "What makes a good restaurant or cafe stop on the Bangalore–Mysore highway? Fernway by Stories in Mayaganahalli serves lunch, dinner and late-night food, open daily 1pm–6am.",
-    datePublished: "2026-11-25",
-    image: "/ambience/11.webp",
-    imageAlt: "Fernway by Stories garden path and open-air dining area on the Bangalore–Mysore highway",
-    keywords: [
-      "best restaurant on Bangalore Mysore highway",
-      "best cafe on Bangalore Mysore highway",
-      "restaurants on Bangalore Mysore highway",
-      "cafes on Bangalore Mysore highway",
-      "where to eat on Mysore Road",
-    ],
-    sections: [
-      {
-        heading: "What makes the best highway stop?",
-        paragraphs: [
-          "The best restaurant or cafe on the Bangalore–Mysore highway is the one that fits your drive: open when you're passing, easy to pull into, with room to sit and food worth stopping for. Fernway by Stories, in Mayaganahalli between Bidadi and Ramanagara, is built around exactly that.",
-        ],
-        list: [
-          `Open every day, ${BUSINESS.hoursDisplay} — one of the few highway stops serving full meals through the night`,
-          "Open-air garden seating with space for families, groups and pets",
-          "A full kitchen, not just snacks: North Indian favourites, global comfort food, coffee and cold brews",
-        ],
-      },
-      {
-        heading: "Lunch on the way to Mysuru",
-        paragraphs: [
-          "We open at 1pm, so a late lunch here breaks up the drive nicely. Try North Indian favourites like chatpata chicken tikka and paneer tikka, or keep it light with small plates, quick bites and coffee in the garden.",
-        ],
-      },
-      {
-        heading: "Dinner under the open sky",
-        paragraphs: [
-          `Evenings bring candlelit garden tables every night. On weekends there's more: ${FRIDAY_JAM}, and ${SATURDAY_BAND}. It's a popular choice for date nights, family dinners and group celebrations.`,
-        ],
-      },
-      {
-        heading: "Late night, when everything else is closed",
-        paragraphs: [
-          "Driving back to Bengaluru after midnight, or heading out late? Our kitchen keeps cooking till 6am, so you can sit down for a proper meal, dessert or a drink long after most highway stops have shut.",
-        ],
-      },
-      {
-        heading: "Find us",
-        paragraphs: [
-          `Address: ${BUSINESS.address.full}. Book a table online or call ${BUSINESS.phoneDisplay} — weekend evenings fill fast.`,
-        ],
-      },
-    ],
-  },
-  {
-    // WHY: targets budget searches; ₹800 for two confirmed by owner 25 Nov 2026 — update here if prices change
-    slug: "affordable-cafe-bangalore-mysore-highway",
-    title: "An Affordable Late-Night Cafe on the Bangalore–Mysore Highway: About ₹800 for Two",
-    heroTitle: "₹800 for Two",
-    description:
-      "Looking for a budget-friendly cafe near Bangalore? Fernway by Stories on the Bangalore–Mysore highway costs about ₹800 for two, with garden seating, live music and food till 6am.",
-    datePublished: "2026-11-25",
-    image: "/food/2.webp",
-    imageAlt: "Garden gazebo table for two at Fernway by Stories in Mayaganahalli",
-    keywords: [
-      "budget friendly cafes near Bangalore",
-      "affordable restaurants on Bangalore Mysore highway",
-      "cafes under 1000 for two near Bangalore",
-      "cheap late night food near Bangalore",
-      "affordable date night near Bangalore",
-    ],
-    sections: [
-      {
-        heading: "A garden night out that doesn't cost a fortune",
-        paragraphs: [
-          "Open-air garden seating, candlelit tables and live music usually come with a big bill. At Fernway by Stories, a meal for two costs about ₹800 — so a date night, a road-trip lunch or a late-night meal with friends stays easy on the wallet.",
-        ],
-      },
-      {
-        heading: "What ₹800 for two gets you",
-        paragraphs: [
-          "Our menu runs from quick bites to full meals, so you can keep it light or go all in:",
-        ],
-        list: [
-          "Soups, salads, chaat and small bites for sharing",
-          "Tikkas from the clay oven, including our chatpata chicken tikka",
-          "North Indian curries with fresh Indian breads, biryanis, fried rice and noodles",
-          "Pizzas, pastas, burgers, sushi and dumplings",
-          "Coffee, cold brews, frappes and desserts",
-        ],
-      },
-      {
-        heading: "Candlelight and live music",
-        paragraphs: [
-          `Candlelit garden tables are there every night. On weekends, ${FRIDAY_JAM}, and ${SATURDAY_BAND} — good food and music under the open sky.`,
-        ],
-      },
-      {
-        heading: "Find us",
-        paragraphs: [
-          `We're in Mayaganahalli on the Bangalore–Mysore highway, between Bidadi and Ramanagara, open every day from ${BUSINESS.hoursDisplay}. Address: ${BUSINESS.address.full}. Book a table online or call ${BUSINESS.phoneDisplay}.`,
-        ],
-      },
-    ],
-  },
-];
+const DIR = path.join(process.cwd(), "content", "blog");
+const isText = (v: unknown): v is string => typeof v === "string" && v.trim() !== "";
+
+function fill(text: string, file: string) {
+  return text.replace(/\{\{(\w+)\}\}/g, (_, name: string) => {
+    if (!(name in FACTS)) throw new Error(`${file}: unknown placeholder {{${name}}} (known: ${Object.keys(FACTS).join(", ")})`);
+    return FACTS[name];
+  });
+}
+
+// A bad post fails the build with the file name, so nothing broken ever reaches the live site.
+function load(file: string): BlogPost {
+  const p = JSON.parse(readFileSync(path.join(DIR, file), "utf8"));
+  for (const key of ["slug", "title", "heroTitle", "description", "datePublished", "image", "imageAlt"] as const) {
+    if (!isText(p[key])) throw new Error(`${file}: "${key}" is missing or empty`);
+  }
+  if (`${p.slug}.json` !== file) throw new Error(`${file}: slug must match the file name`);
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(p.datePublished)) throw new Error(`${file}: datePublished must be YYYY-MM-DD`);
+  if (!Array.isArray(p.keywords) || !Array.isArray(p.sections) || !p.sections.length) throw new Error(`${file}: needs keywords[] and sections[]`);
+  for (const s of p.sections) {
+    if (!isText(s.heading) || !Array.isArray(s.paragraphs)) throw new Error(`${file}: every section needs a heading and paragraphs[]`);
+  }
+  return {
+    ...p,
+    title: fill(p.title, file),
+    description: fill(p.description, file),
+    sections: p.sections.map((s: BlogSection) => ({
+      heading: fill(s.heading, file),
+      paragraphs: s.paragraphs.map((t) => fill(t, file)),
+      ...(s.list ? { list: s.list.map((t) => fill(t, file)) } : {}),
+    })),
+  };
+}
+
+// Newest first, so a new post shows at the top of /blog; same-day posts by title.
+export const blogPosts: BlogPost[] = readdirSync(DIR)
+  .filter((f) => f.endsWith(".json"))
+  .map(load)
+  .sort((a, b) => b.datePublished.localeCompare(a.datePublished) || a.title.localeCompare(b.title));
 
 export function getBlogPost(slug: string) {
   return blogPosts.find((post) => post.slug === slug);

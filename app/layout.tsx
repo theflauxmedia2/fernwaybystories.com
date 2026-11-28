@@ -62,6 +62,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             gtag('config', '${GOOGLE_ADS_ID}');
           `}
         </Script>
+        {/* GA4 events for call / WhatsApp / directions / booking taps (public/track-clicks.js). */}
+        <Script src="/track-clicks.js" strategy="afterInteractive" />
       </body>
     </html>
   );
