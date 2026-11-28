@@ -1,0 +1,45 @@
+{
+  "slug": "late-night-cafe-bangalore-mysore-expressway",
+  "title": "A Late-Night Cafe on the Bangalore–Mysore Expressway, Open Till 6am",
+  "heroTitle": "Open Till 6am",
+  "description": "Looking for cafes open till late night near Bangalore? Fernway by Stories in Mayaganahalli is open every day till 6am — midnight dining and coffee on the expressway.",
+  "datePublished": "2026-11-24",
+  "image": "/ambience/15.webp",
+  "imageAlt": "Fernway by Stories garden lit up at night, a late-night cafe on the Bangalore–Mysore Expressway",
+  "keywords": [
+    "late night cafes in Bangalore",
+    "cafes open till late night",
+    "cafes open till 6am",
+    "midnight dining places",
+    "late night food near Bangalore",
+    "cafes on Bangalore Mysore Expressway"
+  ],
+  "sections": [
+    {
+      "heading": "When the city closes, Fernway is just getting started",
+      "paragraphs": [
+        "Plenty of cafes wind down around midnight. Fernway by Stories stays open every day from {{hoursDisplay}}, which makes it one of the few places on the Bangalore–Mysore Expressway where you can sit down for a proper meal, a coffee or a drink long after the city has gone quiet.",
+        "We call ourselves a cafe because that is how most people search for a late-night spot — but Fernway is a full garden restaurant, with a kitchen that keeps cooking through the night."
+      ]
+    },
+    {
+      "heading": "What midnight dining looks like here",
+      "paragraphs": [
+        "Open-air garden tables, warm lights, candlelit tables every night and a menu built for long conversations."
+      ],
+      "list": [
+        "North Indian favourites like chatpata chicken tikka and paneer tikka",
+        "Global comfort food, small plates and quick bites",
+        "Desserts, coffee, cold brews and frappes",
+        "Pet-friendly garden seating with space for groups"
+      ]
+    },
+    {
+      "heading": "Where we are",
+      "paragraphs": [
+        "Fernway is in Mayaganahalli, between Bidadi and Ramanagara, right on the Bangalore–Mysore Expressway (Mysore Road). Address: {{address}}. It's an easy late-night drive out of Bengaluru, and an easy stop if you're driving back from Mysuru.",
+        "Planning a late night with friends? Book a table online or call {{phone}} — weekends fill fast."
+      ]
+    }
+  ]
+}

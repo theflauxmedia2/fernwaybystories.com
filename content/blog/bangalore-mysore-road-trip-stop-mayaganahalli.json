@@ -1,0 +1,40 @@
+{
+  "slug": "bangalore-mysore-road-trip-stop-mayaganahalli",
+  "title": "Bangalore to Mysore Road Trip: A Stop Worth Making in Mayaganahalli",
+  "heroTitle": "Road Trip Stop",
+  "description": "Driving the Bangalore–Mysore Expressway? Fernway by Stories in Mayaganahalli is an open-air cafe and restaurant stop, open daily 1pm–6am, between Bidadi and Ramanagara.",
+  "datePublished": "2026-11-24",
+  "image": "/ambience/12.webp",
+  "imageAlt": "Fernway by Stories sign in the garden at Mayaganahalli on the Bangalore–Mysore Expressway",
+  "keywords": [
+    "cafes on Bangalore Mysore Expressway",
+    "restaurants on Bangalore Mysore highway",
+    "cafes in Mayaganahalli",
+    "Bangalore Mysore road trip food stop",
+    "restaurants near Ramanagara"
+  ],
+  "sections": [
+    {
+      "heading": "A real meal, not just a quick break",
+      "paragraphs": [
+        "The Bangalore–Mysore Expressway made the drive faster — and made good places to stop harder to notice. Fernway by Stories, in Mayaganahalli between Bidadi and Ramanagara, is worth slowing down for: an open-air garden cafe and restaurant with space to stretch out."
+      ]
+    },
+    {
+      "heading": "What you'll find",
+      "paragraphs": [],
+      "list": [
+        "Open every day, {{hoursDisplay}} — lunch, dinner or a late-night stop",
+        "North Indian food, global comfort plates, coffee and cold brews",
+        "Spacious garden seating for families and groups — pet friendly too",
+        "Live music on Friday and Saturday nights"
+      ]
+    },
+    {
+      "heading": "Find us",
+      "paragraphs": [
+        "Address: {{address}}. Use the map on our contact page for directions, or call {{phone}}."
+      ]
+    }
+  ]
+}

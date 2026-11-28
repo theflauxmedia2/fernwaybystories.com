@@ -1,0 +1,48 @@
+{
+  "slug": "candlelight-dinner-near-bangalore",
+  "title": "Candlelight Dinner Near Bangalore: Date Nights Under the Open Sky",
+  "heroTitle": "Candlelight",
+  "description": "Planning a candlelight dinner near Bangalore? Fernway by Stories sets candlelit garden tables every night — a date night spot for couples on the Bangalore–Mysore Expressway.",
+  "datePublished": "2026-11-24",
+  "image": "/ambience/14.webp",
+  "imageAlt": "Garden lights coming on at dusk at Fernway by Stories, a date night spot near Bangalore",
+  "keywords": [
+    "candle light dinner near Bangalore",
+    "candle light dinner in Bangalore",
+    "date night places near Bangalore",
+    "best cafe for couples",
+    "romantic places near Bangalore for couples"
+  ],
+  "sections": [
+    {
+      "heading": "Candlelight every night — no special booking needed",
+      "paragraphs": [
+        "At Fernway by Stories, candlelit tables aren't a package you have to pre-book. Every night, the garden is set with candles, warm lights and greenery, so any dinner here can be a candlelight dinner.",
+        "It's why couples drive out from Bengaluru for date nights, anniversaries and birthdays: open sky above, no city noise, and nobody rushing you out — we're open till 6am."
+      ]
+    },
+    {
+      "heading": "The best night for couples: Friday candlelight jamming",
+      "paragraphs": [
+        "If you can only pick one night, pick Friday — {{fridayJam}}. Soft live music, candles on every table and a late dinner make it our most romantic evening of the week."
+      ]
+    },
+    {
+      "heading": "Make it a date",
+      "paragraphs": [
+        "A few ideas from our team:"
+      ],
+      "list": [
+        "Arrive around sunset and stay for dinner under the stars",
+        "Share North Indian starters, then a slow main course and dessert",
+        "Celebrating something? Mention it when you book and we'll help with seating"
+      ]
+    },
+    {
+      "heading": "Getting here",
+      "paragraphs": [
+        "Fernway is in Mayaganahalli on the Bangalore–Mysore Expressway, between Bidadi and Ramanagara — an easy drive out of the city. Reserve a table online or call {{phone}}."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "slug": "live-music-dinner-near-bangalore",
+  "title": "Dinner With Live Music Near Bangalore: Friday Jams & Saturday Bands",
+  "heroTitle": "Live Music",
+  "description": "Want live bands while having dinner? Fernway by Stories hosts a candlelight jam every Friday (11pm–2am) and a live band every Saturday, in an open-air garden near Bangalore.",
+  "datePublished": "2026-11-24",
+  "image": "/ambience/13.webp",
+  "imageAlt": "Open-air shell and garden tables at Fernway by Stories, where music nights happen",
+  "keywords": [
+    "live music restaurants near Bangalore",
+    "live band restaurants near me",
+    "live bands while having dinner",
+    "live music dinner Bangalore Mysore highway"
+  ],
+  "sections": [
+    {
+      "heading": "Our weekly music nights",
+      "paragraphs": [
+        "Music at Fernway is built around dinner — loud enough to feel, soft enough to talk over."
+      ],
+      "list": [
+        "Friday — candlelight midnight jamming, 11pm to 2am",
+        "Saturday — live band night",
+        "Plus DJ and lounge nights, themed evenings and seasonal events through the year"
+      ]
+    },
+    {
+      "heading": "Why it's different from a city music venue",
+      "paragraphs": [
+        "Many live-music spots in the city are indoors and crowded. At Fernway, {{saturdayBand}}, under the open sky, with tables spread across greenery — so you get the band and still get a proper dinner.",
+        "Our kitchen serves North Indian favourites, global comfort food, desserts and coffee, and we stay open till 6am, so the night doesn't have to end when the music does."
+      ]
+    },
+    {
+      "heading": "Plan your night",
+      "paragraphs": [
+        "Music nights are our busiest, so book ahead online or call {{phone}}. For the latest line-up, check our events page or Instagram."
+      ]
+    }
+  ]
+}

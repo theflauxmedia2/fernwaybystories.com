@@ -1,0 +1,49 @@
+{
+  "slug": "affordable-cafe-bangalore-mysore-highway",
+  "title": "An Affordable Late-Night Cafe on the Bangalore–Mysore Highway: About ₹800 for Two",
+  "heroTitle": "₹800 for Two",
+  "description": "Looking for a budget-friendly cafe near Bangalore? Fernway by Stories on the Bangalore–Mysore highway costs about ₹800 for two, with garden seating, live music and food till 6am.",
+  "datePublished": "2026-11-25",
+  "image": "/food/2.webp",
+  "imageAlt": "Garden gazebo table for two at Fernway by Stories in Mayaganahalli",
+  "keywords": [
+    "budget friendly cafes near Bangalore",
+    "affordable restaurants on Bangalore Mysore highway",
+    "cafes under 1000 for two near Bangalore",
+    "cheap late night food near Bangalore",
+    "affordable date night near Bangalore"
+  ],
+  "sections": [
+    {
+      "heading": "A garden night out that doesn't cost a fortune",
+      "paragraphs": [
+        "Open-air garden seating, candlelit tables and live music usually come with a big bill. At Fernway by Stories, a meal for two costs about ₹800 — so a date night, a road-trip lunch or a late-night meal with friends stays easy on the wallet."
+      ]
+    },
+    {
+      "heading": "What ₹800 for two gets you",
+      "paragraphs": [
+        "Our menu runs from quick bites to full meals, so you can keep it light or go all in:"
+      ],
+      "list": [
+        "Soups, salads, chaat and small bites for sharing",
+        "Tikkas from the clay oven, including our chatpata chicken tikka",
+        "North Indian curries with fresh Indian breads, biryanis, fried rice and noodles",
+        "Pizzas, pastas, burgers, sushi and dumplings",
+        "Coffee, cold brews, frappes and desserts"
+      ]
+    },
+    {
+      "heading": "Candlelight and live music",
+      "paragraphs": [
+        "Candlelit garden tables are there every night. On weekends, {{fridayJam}}, and {{saturdayBand}} — good food and music under the open sky."
+      ]
+    },
+    {
+      "heading": "Find us",
+      "paragraphs": [
+        "We're in Mayaganahalli on the Bangalore–Mysore highway, between Bidadi and Ramanagara, open every day from {{hoursDisplay}}. Address: {{address}}. Book a table online or call {{phone}}."
+      ]
+    }
+  ]
+}
