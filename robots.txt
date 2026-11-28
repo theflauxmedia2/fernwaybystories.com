@@ -1,0 +1,68 @@
+User-Agent: *
+Allow: /
+Disallow: /api/
+Disallow: /next-assets/
+Disallow: /private/
+
+User-Agent: GPTBot
+Allow: /
+Disallow: /api/
+Disallow: /next-assets/
+
+User-Agent: ChatGPT-User
+Allow: /
+Disallow: /api/
+Disallow: /next-assets/
+
+User-Agent: OAI-SearchBot
+Allow: /
+Disallow: /api/
+Disallow: /next-assets/
+
+User-Agent: Google-Extended
+Allow: /
+Disallow: /api/
+Disallow: /next-assets/
+
+User-Agent: anthropic-ai
+Allow: /
+Disallow: /api/
+Disallow: /next-assets/
+
+User-Agent: ClaudeBot
+Allow: /
+Disallow: /api/
+Disallow: /next-assets/
+
+User-Agent: Claude-Web
+Allow: /
+Disallow: /api/
+Disallow: /next-assets/
+
+User-Agent: PerplexityBot
+Allow: /
+Disallow: /api/
+Disallow: /next-assets/
+
+User-Agent: Applebot-Extended
+Allow: /
+Disallow: /api/
+Disallow: /next-assets/
+
+User-Agent: cohere-ai
+Allow: /
+Disallow: /api/
+Disallow: /next-assets/
+
+User-Agent: FacebookBot
+Allow: /
+Disallow: /api/
+Disallow: /next-assets/
+
+User-Agent: meta-externalagent
+Allow: /
+Disallow: /api/
+Disallow: /next-assets/
+
+Host: fernwaybystories.com
+Sitemap: https://fernwaybystories.com/sitemap.xml
