@@ -24,7 +24,7 @@ jobs:
       - run: npm run build
       - name: Every post file became a page
         run: |
-          want=$(find content/blog -maxdepth 1 -name '*.json' 2>/dev/null | wc -l)
+          want=$(find content/blog -maxdepth 1 -name '*.json' ! -name '_*' 2>/dev/null | wc -l)
           got=$(find "$BLOG_OUT" -mindepth 1 -maxdepth 1 -type d ! -name _none 2>/dev/null | wc -l)
           echo "posts: $want files, $got pages"
           test "$got" -ge "$want"
